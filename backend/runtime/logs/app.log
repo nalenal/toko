@@ -1,0 +1,173 @@
+2016-11-21 13:06:44 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(/var/www/html/yii2-shop/frontend/web/images/ea66c06c1e1c05fa9f1aa39d98dc5bc1.jpg): failed to open stream: Permission denied' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/UploadedFile.php:161
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/var/www/html/y...', 161, Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/UploadedFile.php(161): move_uploaded_file('/tmp/phpN4XnPK', '/var/www/html/y...')
+#2 /var/www/html/yii2-shop/backend/controllers/ImageController.php(60): yii\web\UploadedFile->saveAs('/var/www/html/y...')
+#3 [internal function]: backend\controllers\ImageController->actionIndex('1')
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('image/index', Array)
+#8 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2016-11-21 13:06:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'Vmo1MHpFZEouEltCOScePDQlQkobCD0JLhBFRx4BHjs.XW8ESzUtHg=='
+    'MultipleUploadForm' => [
+        'files' => [
+            0 => ''
+        ]
+    ]
+]
+
+$_FILES = [
+    'MultipleUploadForm' => [
+        'name' => [
+            'files' => [
+                0 => 'xiaomi 2.jpg'
+            ]
+        ]
+        'type' => [
+            'files' => [
+                0 => 'image/jpeg'
+            ]
+        ]
+        'tmp_name' => [
+            'files' => [
+                0 => '/tmp/phpN4XnPK'
+            ]
+        ]
+        'error' => [
+            'files' => [
+                0 => 0
+            ]
+        ]
+        'size' => [
+            'files' => [
+                0 => 56382
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '155ce54ed0649a99b4b3b92f27e30b291711b575be6c980c05599f45f5eac0bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xxnrCbzvbOwzaMYCxzpwdDzqh7Z41pIT\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/adm/image/index?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=155ce54ed0649a99b4b3b92f27e30b291711b575be6c980c05599f45f5eac0bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xxnrCbzvbOwzaMYCxzpwdDzqh7Z41pIT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------12994721105422279881406309334'
+    'CONTENT_LENGTH' => '56925'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59160'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//image/index'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/yii2-shop/adm/image/index?id=1'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479733604.102
+    'REQUEST_TIME' => 1479733604
+]
+2016-11-21 13:11:18 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'unlink(/var/www/html/yii2-shop/frontend/web/images/ea66c06c1e1c05fa9f1aa39d98dc5bc1.jpg): No such file or directory' in /var/www/html/yii2-shop/common/models/Image.php:71
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'unlink(/var/www...', '/var/www/html/y...', 71, Array)
+#1 /var/www/html/yii2-shop/common/models/Image.php(71): unlink('/var/www/html/y...')
+#2 /var/www/html/yii2-shop/vendor/yiisoft/yii2/db/ActiveRecord.php(615): common\models\Image->afterDelete()
+#3 /var/www/html/yii2-shop/vendor/yiisoft/yii2/db/ActiveRecord.php(573): yii\db\ActiveRecord->deleteInternal()
+#4 /var/www/html/yii2-shop/backend/controllers/ImageController.php(84): yii\db\ActiveRecord->delete()
+#5 [internal function]: backend\controllers\ImageController->actionDelete('1')
+#6 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('delete', Array)
+#9 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('image/delete', Array)
+#10 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2016-11-21 13:11:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'VExQZVpuYUYsND4XGQwbMDYDJx87IzgFLDYgEj4qGzc8ewpRax4oEg=='
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '155ce54ed0649a99b4b3b92f27e30b291711b575be6c980c05599f45f5eac0bda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xxnrCbzvbOwzaMYCxzpwdDzqh7Z41pIT\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/adm/image/index?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=155ce54ed0649a99b4b3b92f27e30b291711b575be6c980c05599f45f5eac0bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xxnrCbzvbOwzaMYCxzpwdDzqh7Z41pIT%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '66'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59176'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//image/delete'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/yii2-shop/adm/image/delete?id=1'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479733878.175
+    'REQUEST_TIME' => 1479733878
+]

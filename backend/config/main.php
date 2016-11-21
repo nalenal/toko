@@ -13,7 +13,17 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'defaultRoute' => 'order/index',
+    //
+    'homeUrl' => '/yii2-shop/adm',
     'components' => [
+        //
+        'urlManager' => [
+             'enablePrettyUrl' => true,
+             'showScriptName' => false,
+             ],
+        'request' => [
+            'baseUrl' => '/yii2-shop/adm',
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,

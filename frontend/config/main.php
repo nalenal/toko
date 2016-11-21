@@ -12,7 +12,18 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'defaultRoute' => 'catalog/list',
+    //
+    'homeUrl' => '/yii2-shop',
+
     'components' => [
+        //
+        'urlManager' => [
+             'enablePrettyUrl' => true,
+             'showScriptName' => false,
+        ],
+        'request' => [
+            'baseUrl' => '/yii2-shop',
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
