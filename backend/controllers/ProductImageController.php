@@ -8,6 +8,9 @@ use backend\models\ProductImageSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
+use backend\models\UploadForm;
+use common\models\Product;
 
 /**
  * ProductImageController implements the CRUD actions for ProductImage model.
@@ -121,4 +124,43 @@ class ProductImageController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+            //// coba save
+    public function actionUpload($id = null)
+    {
+        if ($id == null || !Product::find()->where(['id' => $id])->exists()) {
+            throw new NotFoundHttpException();
+        }
+
+        $model = new ProductImage();
+        $form = new UploadForm();
+
+//        $searchModel = new ImageSearch();
+ //       $searchModel->product_id = $id;
+//
+  //      $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        if (Yii::$app->request->isPost) {
+
+            $form->imageFile = UploadedFile::getInstance($form, 'imageFile');
+            
+            if($form->upload($id)) {
+                //upload sukses
+                $model->product_id = $id;
+                $model->link = $form->imageFile->baseName.'.'.$form->imageFile->extension;
+                $model->is_main = 0;
+                $model->save();
+            }
+        }
+
+        return $this->render('uploadForm',
+            [   'modelForm' => $form,
+                'model' => $model,
+    //            'searchModel' => $searchModel,
+    //            'dataProvider' => $dataProvider,
+             ]);
+    }
+
+
 }
+

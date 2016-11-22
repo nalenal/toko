@@ -171,3 +171,1609 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1479733878.175
     'REQUEST_TIME' => 1479733878
 ]
+2016-11-21 15:35:59 [127.0.0.1][-][ie7hg9t0fdvgva3s0qon4ve101][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('coba', Array)
+#3 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('product-image/c...', Array)
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2016-11-21 15:35:59 [127.0.0.1][-][ie7hg9t0fdvgva3s0qon4ve101][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59320'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image/coba'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/adm/product-image/coba'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479742559.079
+    'REQUEST_TIME' => 1479742559
+]
+2016-11-21 15:36:28 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Product' not found' in /var/www/html/yii2-shop/backend/controllers/ProductImageController.php:128
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-21 15:36:28 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59330'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image/coba'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/adm/product-image/coba'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479742588.23
+    'REQUEST_TIME' => 1479742588
+]
+2016-11-21 15:37:26 [127.0.0.1][-][ie7hg9t0fdvgva3s0qon4ve101][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' in /var/www/html/yii2-shop/backend/controllers/ProductImageController.php:129
+Stack trace:
+#0 [internal function]: backend\controllers\ProductImageController->actionCoba(NULL)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('coba', Array)
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('product-image/c...', Array)
+#5 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#7 {main}
+2016-11-21 15:37:26 [127.0.0.1][-][ie7hg9t0fdvgva3s0qon4ve101][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59332'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image/coba'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/adm/product-image/coba'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479742646.179
+    'REQUEST_TIME' => 1479742646
+]
+2016-11-21 15:38:29 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\UploadedFile' not found' in /var/www/html/yii2-shop/backend/controllers/ProductImageController.php:142
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-21 15:38:28 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'dUZXbTFZMXIYfzgOeyxJJRAzPCsHNmcCHzdnJVZtdSIeL2YMfw5eXw=='
+    'ProductImage' => [
+        'file' => ''
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'file' => 'bebek6.jpg'
+        ]
+        'type' => [
+            'file' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'file' => '/tmp/phpdlhUDL'
+        ]
+        'error' => [
+            'file' => 0
+        ]
+        'size' => [
+            'file' => 4587
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/adm/product-image/coba'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------629309393187438727703728582'
+    'CONTENT_LENGTH' => '5102'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59340'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image/coba'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/adm/product-image/coba'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479742708.995
+    'REQUEST_TIME' => 1479742708
+]
+2016-11-21 15:39:11 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: form' in /var/www/html/yii2-shop/backend/controllers/ProductImageController.php:144
+Stack trace:
+#0 /var/www/html/yii2-shop/backend/controllers/ProductImageController.php(144): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/y...', 144, Array)
+#1 [internal function]: backend\controllers\ProductImageController->actionCoba(NULL)
+#2 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('coba', Array)
+#5 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('product-image/c...', Array)
+#6 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-11-21 15:39:11 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'NW5PdTl1enlYVyAWcwACLlAbJDMPGiwJXx9/PV5BPileB34UdyIVVA=='
+    'ProductImage' => [
+        'file' => ''
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'file' => 'bebek6.jpg'
+        ]
+        'type' => [
+            'file' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'file' => '/tmp/phpJUdSOu'
+        ]
+        'error' => [
+            'file' => 0
+        ]
+        'size' => [
+            'file' => 4587
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/adm/product-image/coba'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------82453059110975556501225096510'
+    'CONTENT_LENGTH' => '5110'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59344'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image/coba'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/adm/product-image/coba'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479742751.763
+    'REQUEST_TIME' => 1479742751
+]
+2016-11-21 15:39:55 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/yii2-shop/backend/controllers/ProductImageController.php:148
+Stack trace:
+#0 /var/www/html/yii2-shop/backend/controllers/ProductImageController.php(148): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/y...', 148, Array)
+#1 [internal function]: backend\controllers\ProductImageController->actionCoba(NULL)
+#2 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('coba', Array)
+#5 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('product-image/c...', Array)
+#6 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-11-21 15:39:55 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'QlEtNHN3UGMvaEJXOQIoNCckRnJFGAYTKCAdfBRDFDMpOBxVPSA/Tg=='
+    'ProductImage' => [
+        'file' => ''
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'file' => 'bebek6.jpg'
+        ]
+        'type' => [
+            'file' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'file' => '/tmp/phpGpHiAh'
+        ]
+        'error' => [
+            'file' => 0
+        ]
+        'size' => [
+            'file' => 4587
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/adm/product-image/coba'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------152078067021342329771847821954'
+    'CONTENT_LENGTH' => '5114'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59346'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image/coba'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/adm/product-image/coba'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479742795.963
+    'REQUEST_TIME' => 1479742795
+]
+2016-11-21 15:41:07 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'if' (T_IF), expecting '('' in /var/www/html/yii2-shop/backend/controllers/ProductImageController.php:135
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-21 15:41:07 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59348'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image/coba'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/adm/product-image/coba'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479742867.451
+    'REQUEST_TIME' => 1479742867
+]
+2016-11-21 15:42:19 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/yii2-shop/backend/controllers/ProductImageController.php:148
+Stack trace:
+#0 /var/www/html/yii2-shop/backend/controllers/ProductImageController.php(148): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/y...', 148, Array)
+#1 [internal function]: backend\controllers\ProductImageController->actionCoba(NULL)
+#2 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('coba', Array)
+#5 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('product-image/c...', Array)
+#6 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-11-21 15:42:19 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'OE9yNTg2SkVVdh1WckMyEl06GXMOWRw1Uj5CfV8CDhVTJkNUdmElaA=='
+    'ProductImage' => [
+        'product_id' => '1'
+        'link' => '1'
+        'is_main' => '0'
+        'file' => ''
+    ]
+]
+
+$_FILES = [
+    'ProductImage' => [
+        'name' => [
+            'file' => 'bebek6.jpg'
+        ]
+        'type' => [
+            'file' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'file' => '/tmp/phpjTU3j5'
+        ]
+        'error' => [
+            'file' => 0
+        ]
+        'size' => [
+            'file' => 4587
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/adm/product-image/coba'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------142580028721344830651637088422'
+    'CONTENT_LENGTH' => '5498'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59352'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image/coba'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/adm/product-image/coba'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479742939.514
+    'REQUEST_TIME' => 1479742939
+]
+2016-11-21 15:57:39 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Image::file' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('file')
+#1 /var/www/html/yii2-shop/backend/controllers/ImageController.php(89): yii\db\BaseActiveRecord->__get('file')
+#2 /var/www/html/yii2-shop/backend/controllers/ImageController.php(55): backend\controllers\ImageController->coba('1', Object(backend\models\MultipleUploadForm))
+#3 [internal function]: backend\controllers\ImageController->actionIndex('1')
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('image/index', Array)
+#8 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2016-11-21 15:57:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'eDM2OWNNMnQVCllaKThKIx1GXX9VImQEEkIGcQR5diQTWgdYLRpdWQ=='
+    'MultipleUploadForm' => [
+        'files' => [
+            0 => ''
+        ]
+    ]
+]
+
+$_FILES = [
+    'MultipleUploadForm' => [
+        'name' => [
+            'files' => [
+                0 => 'bebek6.jpg'
+            ]
+        ]
+        'type' => [
+            'files' => [
+                0 => 'image/jpeg'
+            ]
+        ]
+        'tmp_name' => [
+            'files' => [
+                0 => '/tmp/phprBhlrb'
+            ]
+        ]
+        'error' => [
+            'files' => [
+                0 => 0
+            ]
+        ]
+        'size' => [
+            'files' => [
+                0 => 4587
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/adm/image/index?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------946051295139800061385922086'
+    'CONTENT_LENGTH' => '5120'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59388'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//image/index'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/yii2-shop/adm/image/index?id=1'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479743859.819
+    'REQUEST_TIME' => 1479743859
+]
+2016-11-21 15:59:18 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Image::file' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('file')
+#1 /var/www/html/yii2-shop/backend/controllers/ImageController.php(89): yii\db\BaseActiveRecord->__get('file')
+#2 /var/www/html/yii2-shop/backend/controllers/ImageController.php(55): backend\controllers\ImageController->coba('1', Object(backend\models\MultipleUploadForm))
+#3 [internal function]: backend\controllers\ImageController->actionIndex('1')
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('image/index', Array)
+#8 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2016-11-21 15:59:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'cU5hcks2U1gcdw4RAUMrDxQ7CjR9WQUoGz9ROiwCFwgaJ1ATBWE8dQ=='
+    'MultipleUploadForm' => [
+        'files' => [
+            0 => ''
+        ]
+    ]
+]
+
+$_FILES = [
+    'MultipleUploadForm' => [
+        'name' => [
+            'files' => [
+                0 => 'bebek6.jpg'
+            ]
+        ]
+        'type' => [
+            'files' => [
+                0 => 'image/jpeg'
+            ]
+        ]
+        'tmp_name' => [
+            'files' => [
+                0 => '/tmp/phpa3OPld'
+            ]
+        ]
+        'error' => [
+            'files' => [
+                0 => 0
+            ]
+        ]
+        'size' => [
+            'files' => [
+                0 => 4587
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/adm/image/index?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------8529320648876836412021800827'
+    'CONTENT_LENGTH' => '5124'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59394'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//image/index'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/yii2-shop/adm/image/index?id=1'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479743958.023
+    'REQUEST_TIME' => 1479743958
+]
+2016-11-21 15:59:49 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Image::file' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('file')
+#1 /var/www/html/yii2-shop/backend/controllers/ImageController.php(89): yii\db\BaseActiveRecord->__get('file')
+#2 /var/www/html/yii2-shop/backend/controllers/ImageController.php(55): backend\controllers\ImageController->coba('1', Object(backend\models\MultipleUploadForm))
+#3 [internal function]: backend\controllers\ImageController->actionIndex('1')
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('image/index', Array)
+#8 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2016-11-21 15:59:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'cU5hcks2U1gcdw4RAUMrDxQ7CjR9WQUoGz9ROiwCFwgaJ1ATBWE8dQ=='
+    'MultipleUploadForm' => [
+        'files' => [
+            0 => ''
+        ]
+    ]
+]
+
+$_FILES = [
+    'MultipleUploadForm' => [
+        'name' => [
+            'files' => [
+                0 => 'bebek6.jpg'
+            ]
+        ]
+        'type' => [
+            'files' => [
+                0 => 'image/jpeg'
+            ]
+        ]
+        'tmp_name' => [
+            'files' => [
+                0 => '/tmp/php5HjRPQ'
+            ]
+        ]
+        'error' => [
+            'files' => [
+                0 => 0
+            ]
+        ]
+        'size' => [
+            'files' => [
+                0 => 4587
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/adm/image/index?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------8529320648876836412021800827'
+    'CONTENT_LENGTH' => '5124'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59398'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//image/index'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/yii2-shop/adm/image/index?id=1'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479743989.745
+    'REQUEST_TIME' => 1479743989
+]
+2016-11-21 16:00:01 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Image::file' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('file')
+#1 /var/www/html/yii2-shop/backend/controllers/ImageController.php(89): yii\db\BaseActiveRecord->__get('file')
+#2 /var/www/html/yii2-shop/backend/controllers/ImageController.php(55): backend\controllers\ImageController->coba('1', Object(backend\models\MultipleUploadForm))
+#3 [internal function]: backend\controllers\ImageController->actionIndex('1')
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('image/index', Array)
+#8 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2016-11-21 16:00:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'S044LkJmSFEmd1dNCBMwBi47U2h0CR4hIT8IZiVSDAEgJwlPDDEnfA=='
+    'MultipleUploadForm' => [
+        'files' => [
+            0 => ''
+        ]
+    ]
+]
+
+$_FILES = [
+    'MultipleUploadForm' => [
+        'name' => [
+            'files' => [
+                0 => 'bebek6.jpg'
+            ]
+        ]
+        'type' => [
+            'files' => [
+                0 => 'image/jpeg'
+            ]
+        ]
+        'tmp_name' => [
+            'files' => [
+                0 => '/tmp/phpTV5AXH'
+            ]
+        ]
+        'error' => [
+            'files' => [
+                0 => 0
+            ]
+        ]
+        'size' => [
+            'files' => [
+                0 => 4587
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/adm/image/index?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------17326643915187166261653214729'
+    'CONTENT_LENGTH' => '5128'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59402'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//image/index'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/yii2-shop/adm/image/index?id=1'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479744001.394
+    'REQUEST_TIME' => 1479744001
+]
+2016-11-21 16:01:39 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\web\UploadedFile::fileextension' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Object.php:138
+Stack trace:
+#0 /var/www/html/yii2-shop/backend/controllers/ImageController.php(89): yii\base\Object->__get('fileextension')
+#1 /var/www/html/yii2-shop/backend/controllers/ImageController.php(55): backend\controllers\ImageController->coba('1', Object(backend\models\MultipleUploadForm))
+#2 [internal function]: backend\controllers\ImageController->actionIndex('1')
+#3 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('image/index', Array)
+#7 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-11-21 16:01:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'N0VfTVNyOElafDAuGQdAHlIwNAtlHW45XTRvBTRGfBlcLG4sHSVXZA=='
+    'MultipleUploadForm' => [
+        'files' => [
+            0 => ''
+        ]
+    ]
+]
+
+$_FILES = [
+    'MultipleUploadForm' => [
+        'name' => [
+            'files' => [
+                0 => 'bebek6.jpg'
+            ]
+        ]
+        'type' => [
+            'files' => [
+                0 => 'image/jpeg'
+            ]
+        ]
+        'tmp_name' => [
+            'files' => [
+                0 => '/tmp/phpo5fy5X'
+            ]
+        ]
+        'error' => [
+            'files' => [
+                0 => 0
+            ]
+        ]
+        'size' => [
+            'files' => [
+                0 => 4587
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/adm/image/index?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------103404281913825647161844665561'
+    'CONTENT_LENGTH' => '5132'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59406'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//image/index'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/yii2-shop/adm/image/index?id=1'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479744099.439
+    'REQUEST_TIME' => 1479744099
+]
+2016-11-21 16:02:16 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'' in /var/www/html/yii2-shop/backend/controllers/ImageController.php:103
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-21 16:02:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59410'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//image/index'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/yii2-shop/adm/image/index?id=1'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479744136.232
+    'REQUEST_TIME' => 1479744136
+]
+2016-11-21 16:02:36 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\web\UploadedFile::file' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Object.php:138
+Stack trace:
+#0 /var/www/html/yii2-shop/backend/controllers/ImageController.php(89): yii\base\Object->__get('file')
+#1 /var/www/html/yii2-shop/backend/controllers/ImageController.php(55): backend\controllers\ImageController->coba('1', Object(backend\models\MultipleUploadForm))
+#2 [internal function]: backend\controllers\ImageController->actionIndex('1')
+#3 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('image/index', Array)
+#7 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-11-21 16:02:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'NXFHMXdPSC1YSChSPTowelAELHdBIB5dXwB3eRB7DH1eGHZQORgnAA=='
+    'MultipleUploadForm' => [
+        'files' => [
+            0 => ''
+        ]
+    ]
+]
+
+$_FILES = [
+    'MultipleUploadForm' => [
+        'name' => [
+            'files' => [
+                0 => 'bebek6.jpg'
+            ]
+        ]
+        'type' => [
+            'files' => [
+                0 => 'image/jpeg'
+            ]
+        ]
+        'tmp_name' => [
+            'files' => [
+                0 => '/tmp/php4ZQdLf'
+            ]
+        ]
+        'error' => [
+            'files' => [
+                0 => 0
+            ]
+        ]
+        'size' => [
+            'files' => [
+                0 => 4587
+            ]
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'ie7hg9t0fdvgva3s0qon4ve101'
+    '_csrf' => '6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/adm/image/index?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=ie7hg9t0fdvgva3s0qon4ve101; _csrf=6fb63320bc12e0d79a0fdb54a69ebd38051b9749a93e08a9cbf0b17c4d5e8365a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9ocJuxWeukF6oVpjq0Hg4DPki1aNWo-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------19162925531602453251840058454'
+    'CONTENT_LENGTH' => '5128'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '59412'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//image/index'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/yii2-shop/adm/image/index?id=1'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479744155.972
+    'REQUEST_TIME' => 1479744155
+]
+2016-11-22 01:58:06 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$', expecting variable (T_VARIABLE)' in /var/www/html/yii2-shop/common/models/ProductImage.php:22
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-22 01:58:06 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '1352ps6gdjhma7vhc0irm64or7'
+    '_csrf' => '2863dcc5b576e2932e31be9b525e44011be0c850f18957969e94810bffcf0cd5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QWQD17cfQ6xIRjcSYW7_M6j-Xg37IwRh\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=1352ps6gdjhma7vhc0irm64or7; _csrf=2863dcc5b576e2932e31be9b525e44011be0c850f18957969e94810bffcf0cd5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QWQD17cfQ6xIRjcSYW7_M6j-Xg37IwRh%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '47390'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/adm/product-image'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479779886.002
+    'REQUEST_TIME' => 1479779886
+]
+2016-11-22 04:57:16 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\models\Yii' not found' in /var/www/html/yii2-shop/backend/models/UploadForm.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-22 04:57:16 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf' => 'NzR5SkdjM3oPAzAcFyRjN11MOwweLlpCD1EbeXItdih6QhsnKi5qMg=='
+    'UploadForm' => [
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'UploadForm' => [
+        'name' => [
+            'imageFile' => 'bebek6.jpg'
+        ]
+        'type' => [
+            'imageFile' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/tmp/phpQ1jFEg'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 4587
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 't2tfpkuoreest7fcsfmuv8d0h5'
+    '_csrf' => '09800c40fb6999f4ef497ab7285178392812dcbff40b75b5ad01fcedef40e43ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"87IVPGPMjxBFYMi88eb35NERMvbmmMYH\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/adm/product-image/upload'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=t2tfpkuoreest7fcsfmuv8d0h5; _csrf=09800c40fb6999f4ef497ab7285178392812dcbff40b75b5ad01fcedef40e43ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2287IVPGPMjxBFYMi88eb35NERMvbmmMYH%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------21119862061597727726178596924'
+    'CONTENT_LENGTH' => '5116'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '38582'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image/upload'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/adm/product-image/upload'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479790636.468
+    'REQUEST_TIME' => 1479790636
+]
+2016-11-22 05:04:40 [127.0.0.1][-][t2tfpkuoreest7fcsfmuv8d0h5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "product-image/upload/id/1".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('product-image/u...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-22 05:04:40 [127.0.0.1][-][t2tfpkuoreest7fcsfmuv8d0h5][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 't2tfpkuoreest7fcsfmuv8d0h5'
+    '_csrf' => '09800c40fb6999f4ef497ab7285178392812dcbff40b75b5ad01fcedef40e43ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"87IVPGPMjxBFYMi88eb35NERMvbmmMYH\";}'
+]
+
+$_SESSION = [
+    '6edee980c7ab963dc6a135c848191fb4__returnUrl' => '/mitradesa/'
+    '6edee980c7ab963dc6a135c848191fb4__id' => 13
+    '6edee980c7ab963dc6a135c848191fb4__name' => 'kades'
+    '6edee980c7ab963dc6a135c848191fb4__states' => []
+    'navtop' => 1
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=t2tfpkuoreest7fcsfmuv8d0h5; _csrf=09800c40fb6999f4ef497ab7285178392812dcbff40b75b5ad01fcedef40e43ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2287IVPGPMjxBFYMi88eb35NERMvbmmMYH%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '38590'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image/upload/id/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/adm/product-image/upload/id/1'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479791080.243
+    'REQUEST_TIME' => 1479791080
+]
+2016-11-22 05:04:47 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Product' not found' in /var/www/html/yii2-shop/backend/controllers/ProductImageController.php:130
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-22 05:04:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 't2tfpkuoreest7fcsfmuv8d0h5'
+    '_csrf' => '09800c40fb6999f4ef497ab7285178392812dcbff40b75b5ad01fcedef40e43ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"87IVPGPMjxBFYMi88eb35NERMvbmmMYH\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=t2tfpkuoreest7fcsfmuv8d0h5; _csrf=09800c40fb6999f4ef497ab7285178392812dcbff40b75b5ad01fcedef40e43ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2287IVPGPMjxBFYMi88eb35NERMvbmmMYH%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '38592'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image/upload'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/yii2-shop/adm/product-image/upload?id=1'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479791087.468
+    'REQUEST_TIME' => 1479791087
+]
+2016-11-22 05:05:31 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in /var/www/html/yii2-shop/backend/views/product-image/coba.php:12
+Stack trace:
+#0 /var/www/html/yii2-shop/backend/views/product-image/coba.php(12): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/y...', 12, Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/View.php(326): require('/var/www/html/y...')
+#2 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#3 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/html/y...', Array, Object(backend\controllers\ProductImageController))
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('coba', Array, Object(backend\controllers\ProductImageController))
+#5 /var/www/html/yii2-shop/backend/controllers/ProductImageController.php(148): yii\base\Controller->render('coba', Array)
+#6 [internal function]: backend\controllers\ProductImageController->actionUpload('1')
+#7 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('upload', Array)
+#10 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('product-image/u...', Array)
+#11 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2016-11-22 05:05:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 't2tfpkuoreest7fcsfmuv8d0h5'
+    '_csrf' => '09800c40fb6999f4ef497ab7285178392812dcbff40b75b5ad01fcedef40e43ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"87IVPGPMjxBFYMi88eb35NERMvbmmMYH\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=t2tfpkuoreest7fcsfmuv8d0h5; _csrf=09800c40fb6999f4ef497ab7285178392812dcbff40b75b5ad01fcedef40e43ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2287IVPGPMjxBFYMi88eb35NERMvbmmMYH%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '38594'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image/upload'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/yii2-shop/adm/product-image/upload?id=1'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479791130.732
+    'REQUEST_TIME' => 1479791130
+]
+2016-11-22 05:30:46 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: is_main' in /var/www/html/yii2-shop/backend/controllers/ProductImageController.php:146
+Stack trace:
+#0 /var/www/html/yii2-shop/backend/controllers/ProductImageController.php(146): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/var/www/html/y...', 146, Array)
+#1 [internal function]: backend\controllers\ProductImageController->actionUpload('1')
+#2 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('upload', Array)
+#5 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('product-image/u...', Array)
+#6 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-11-22 05:30:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'N0pDbVRuSXYPfQo7BCkZO10yASsNIyBODy8hXmEgDCR6PCEAOSMQPg=='
+    'ProductImage' => [
+        'product_id' => '1'
+        'link' => '1'
+        'is_main' => '0'
+    ]
+    'UploadForm' => [
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'UploadForm' => [
+        'name' => [
+            'imageFile' => 'bebek1.jpeg'
+        ]
+        'type' => [
+            'imageFile' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/tmp/phpdsqhVu'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 3648
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 't2tfpkuoreest7fcsfmuv8d0h5'
+    '_csrf' => '09800c40fb6999f4ef497ab7285178392812dcbff40b75b5ad01fcedef40e43ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"87IVPGPMjxBFYMi88eb35NERMvbmmMYH\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/adm/product-image/upload?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=t2tfpkuoreest7fcsfmuv8d0h5; _csrf=09800c40fb6999f4ef497ab7285178392812dcbff40b75b5ad01fcedef40e43ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2287IVPGPMjxBFYMi88eb35NERMvbmmMYH%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------20609702713540401101417638466'
+    'CONTENT_LENGTH' => '4559'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '38626'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image/upload'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/yii2-shop/adm/product-image/upload?id=1'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479792646.243
+    'REQUEST_TIME' => 1479792646
+]

@@ -81,6 +81,14 @@ class Product extends \yii\db\ActiveRecord implements CartPositionInterface
     }
 
     /**
+     * @return ProductImage[]
+     */
+    public function getProductImages()
+    {
+        return $this->hasMany(ProductImage::className(), ['product_id' => 'id']);
+    }
+
+    /**
      * @return \yii\db\ActiveQuery
      */
     public function getOrderItems()
