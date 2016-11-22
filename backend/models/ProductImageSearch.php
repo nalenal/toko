@@ -41,7 +41,7 @@ class ProductImageSearch extends ProductImage
      */
     public function search($params)
     {
-        $query = ProductImage::find();
+        $query = ProductImage::find()->where(['product_id'=> $params['id']]);
 
         // add conditions that should always apply here
 

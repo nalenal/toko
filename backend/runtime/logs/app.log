@@ -1777,3 +1777,83 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1479792646.243
     'REQUEST_TIME' => 1479792646
 ]
+2016-11-22 06:11:08 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: common\models\ProductImage::getUrl()' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Component.php:285
+Stack trace:
+#0 /var/www/html/yii2-shop/backend/views/product-image/uploadForm.php(33): yii\base\Component->__call('getUrl', Array)
+#1 /var/www/html/yii2-shop/backend/views/product-image/uploadForm.php(33): common\models\ProductImage->getUrl()
+#2 [internal function]: yii\base\View->{closure}(Object(common\models\ProductImage), 1, 0, Object(yii\grid\DataColumn))
+#3 /var/www/html/yii2-shop/vendor/yiisoft/yii2/grid/DataColumn.php(211): call_user_func(Object(Closure), Object(common\models\ProductImage), 1, 0, Object(yii\grid\DataColumn))
+#4 /var/www/html/yii2-shop/vendor/yiisoft/yii2/grid/DataColumn.php(225): yii\grid\DataColumn->getDataCellValue(Object(common\models\ProductImage), 1, 0)
+#5 /var/www/html/yii2-shop/vendor/yiisoft/yii2/grid/Column.php(108): yii\grid\DataColumn->renderDataCellContent(Object(common\models\ProductImage), 1, 0)
+#6 /var/www/html/yii2-shop/vendor/yiisoft/yii2/grid/GridView.php(504): yii\grid\Column->renderDataCell(Object(common\models\ProductImage), 1, 0)
+#7 /var/www/html/yii2-shop/vendor/yiisoft/yii2/grid/GridView.php(473): yii\grid\GridView->renderTableRow(Object(common\models\ProductImage), 1, 0)
+#8 /var/www/html/yii2-shop/vendor/yiisoft/yii2/grid/GridView.php(344): yii\grid\GridView->renderTableBody()
+#9 /var/www/html/yii2-shop/vendor/yiisoft/yii2/widgets/BaseListView.php(151): yii\grid\GridView->renderItems()
+#10 /var/www/html/yii2-shop/vendor/yiisoft/yii2/grid/GridView.php(313): yii\widgets\BaseListView->renderSection('{items}')
+#11 /var/www/html/yii2-shop/vendor/yiisoft/yii2/widgets/BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 /var/www/html/yii2-shop/vendor/yiisoft/yii2/widgets/BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 /var/www/html/yii2-shop/vendor/yiisoft/yii2/grid/GridView.php(288): yii\widgets\BaseListView->run()
+#15 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Widget.php(102): yii\grid\GridView->run()
+#16 /var/www/html/yii2-shop/backend/views/product-image/uploadForm.php(41): yii\base\Widget::widget(Array)
+#17 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/View.php(326): require('/var/www/html/y...')
+#18 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#19 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/View.php(150): yii\base\View->renderFile('/var/www/html/y...', Array, Object(backend\controllers\ProductImageController))
+#20 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('uploadForm', Array, Object(backend\controllers\ProductImageController))
+#21 /var/www/html/yii2-shop/backend/controllers/ProductImageController.php(161): yii\base\Controller->render('uploadForm', Array)
+#22 [internal function]: backend\controllers\ProductImageController->actionUpload('1')
+#23 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#24 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#25 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('upload', Array)
+#26 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('product-image/u...', Array)
+#27 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /var/www/html/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+2016-11-22 06:11:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 't2tfpkuoreest7fcsfmuv8d0h5'
+    '_csrf' => '09800c40fb6999f4ef497ab7285178392812dcbff40b75b5ad01fcedef40e43ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"87IVPGPMjxBFYMi88eb35NERMvbmmMYH\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=t2tfpkuoreest7fcsfmuv8d0h5; _csrf=09800c40fb6999f4ef497ab7285178392812dcbff40b75b5ad01fcedef40e43ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2287IVPGPMjxBFYMi88eb35NERMvbmmMYH%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '38690'
+    'REDIRECT_URL' => '/yii2-shop/backend/web//product-image/upload'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/yii2-shop/adm/product-image/upload?id=1'
+    'SCRIPT_NAME' => '/yii2-shop/backend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479795068.256
+    'REQUEST_TIME' => 1479795068
+]

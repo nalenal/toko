@@ -38,7 +38,7 @@ class ProductImage extends \yii\db\ActiveRecord
          //   [['product_id', 'link', 'is_main'], 'required'],
             [['product_id', 'is_main'], 'integer'],
             [['link'], 'string', 'max' => 100],
-            [['imageFile'], 'file'],
+         //ganti di common/models/UploadForm   [['imageFile'], 'file'],
         ];
     }
 

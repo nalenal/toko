@@ -132,13 +132,13 @@ class ProductImageController extends Controller
             throw new NotFoundHttpException();
         }
 
-        $model = new ProductImage();
+        $modelProductImage = new ProductImage();
         $form = new UploadForm();
 
-//        $searchModel = new ImageSearch();
- //       $searchModel->product_id = $id;
+        $searchModel = new ProductImageSearch();
+        $searchModel->product_id = $id;
 //
-  //      $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+       $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         if (Yii::$app->request->isPost) {
 
@@ -146,18 +146,18 @@ class ProductImageController extends Controller
             
             if($form->upload($id)) {
                 //upload sukses
-                $model->product_id = $id;
-                $model->link = $form->imageFile->baseName.'.'.$form->imageFile->extension;
-                $model->is_main = 0;
-                $model->save();
+                $modelProductImage->product_id = $id;
+                $modelProductImage->link = $form->imageFile->baseName.'.'.$form->imageFile->extension;
+                $modelProductImage->is_main = 0;
+                $modelProductImage->save();
             }
         }
 
         return $this->render('uploadForm',
             [   'modelForm' => $form,
-                'model' => $model,
-    //            'searchModel' => $searchModel,
-    //            'dataProvider' => $dataProvider,
+                'modelProductImage' => $modelProductImage,
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
              ]);
     }
 
