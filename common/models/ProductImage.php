@@ -79,6 +79,12 @@ class ProductImage extends \yii\db\ActiveRecord
 
     }
 
+    public function getUrl($product_id)
+    {
+        $imageUrl = Yii::getAlias('@frontendWebroot/uploads').'/'.$product_id;
+        return $imageUrl;
+    }
+
 
     /**
      * @return \yii\db\ActiveQuery

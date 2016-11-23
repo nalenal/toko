@@ -23,17 +23,20 @@ use yii\grid\GridView;
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
+    //    'filterModel' => $searchModel,
         'columns' => [
             'id',
-            [
+            [   
+                'label' => 'Gambar',
                 'format' => 'raw',
                 'value' => function ($model, $key, $index, $column) {
                     /** @var $model common\models\Image */
-                //    return Html::img($model->getUrl());
+                    $url = $model->getUrl($model->product_id);
+                    return Html::img($url.'/'.$model->link);
+                 //   print_r($url);
                 }
             ],
-            [
+            [   
                 'class' => 'yii\grid\ActionColumn',
                 'template' => '{delete}',
             ],
