@@ -92,7 +92,16 @@ a.desc:after {
 
 /* Menus */
 
+ul.menu {
+    list-style: none;
+}
+
 ul.menu .active a {
     color: #fff;
     background: #428bca;
+    font-size: 18px;
+}
+
+ul.menu ul {
+    list-style: none;
 }
