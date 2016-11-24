@@ -9,6 +9,12 @@ use yz\shoppingcart\ShoppingCart;
 
 class CartController extends \yii\web\Controller
 {
+    //
+    public function actionIndex()
+    {
+        $this->redirect(['cart/list']);
+    }
+    
     public function actionAdd($id)
     {
         $product = Product::findOne($id);

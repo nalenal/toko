@@ -38,11 +38,11 @@ class TokoAsset extends AssetBundle
         'js/bootstrap-typeahead.js',
         'js/jquery.js',
         'js/jquery.lightbox-0.5.js',
-        'js/jquery.ui.custom.js',
+    //    'js/jquery.ui.custom.js',
         'js/google-code-prettify/prettify.js',
     ];
     public $depends = [
-        'yii\web\YiiAsset',
-      //  'yii\bootstrap\BootstrapAsset',
+      //  'yii\web\YiiAsset',
+        //'yii\bootstrap\BootstrapAsset',
     ];
 }
