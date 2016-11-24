@@ -23,7 +23,7 @@ hr.soften {margin: 8px 0 4px; background:#ddd;}
 .carousel .active.left {left:0;opacity:0;z-index:2;}
 .carousel .next {left:0;opacity:1;z-index:1;}
 .navbar-inner {padding-left: 0;padding-right: 0;}
-.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {color: white;background-color: #CF0007;text-shadow: none;}
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {color: white;background-color: brown;text-shadow: none;}
 /* Sidebar--------- */
 #sidebar .bs-docs-sidenav > li > a {border: 0; }
 #sidebar ul{margin-top:0px; padding:0}

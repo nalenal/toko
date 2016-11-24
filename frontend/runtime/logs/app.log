@@ -4766,3 +4766,1829 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1479950854.38
     'REQUEST_TIME' => 1479950854
 ]
+2016-11-24 01:48:52 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "product_summary.html".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('product_summary...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 01:48:52 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    '_csrf' => '44370162aa829fdb4d5031b26d46b5dc44471e1e2ce30fc9affcb4ce0ad21850a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-mphZeLFFSgSrPLx1y0bhhw9zcFmq0JG\";}'
+    'PHPSESSID' => '2dslbubd5n6lrv780hdab7kqh6'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; _csrf=44370162aa829fdb4d5031b26d46b5dc44471e1e2ce30fc9affcb4ce0ad21850a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-mphZeLFFSgSrPLx1y0bhhw9zcFmq0JG%22%3B%7D; PHPSESSID=2dslbubd5n6lrv780hdab7kqh6'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '41684'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/product_summary.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/product_summary.html'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479952132.637
+    'REQUEST_TIME' => 1479952132
+]
+2016-11-24 01:56:20 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/img/logo.png".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/img/logo...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 01:56:20 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    '_csrf' => '44370162aa829fdb4d5031b26d46b5dc44471e1e2ce30fc9affcb4ce0ad21850a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-mphZeLFFSgSrPLx1y0bhhw9zcFmq0JG\";}'
+    'PHPSESSID' => '2dslbubd5n6lrv780hdab7kqh6'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; _csrf=44370162aa829fdb4d5031b26d46b5dc44471e1e2ce30fc9affcb4ce0ad21850a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-mphZeLFFSgSrPLx1y0bhhw9zcFmq0JG%22%3B%7D; PHPSESSID=2dslbubd5n6lrv780hdab7kqh6'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_IF_MODIFIED_SINCE' => 'Sat, 20 Oct 2012 14:05:02 GMT'
+    'HTTP_IF_NONE_MATCH' => '\"28c7-4cc7e1b407f80\"'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '41746'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/img/logo.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/img/logo.png'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479952580.359
+    'REQUEST_TIME' => 1479952580
+]
+2016-11-24 03:48:49 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/21ac30c4/jquery.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/21ac30c4...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:48:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => '831e8087b9e2da9aa7dd988c8c5a10dea378175d8b237bd42be1e4a9bb236d4da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IlO5Vr1jVo5YlmHsVVLyXK46c3sDH4_W\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=831e8087b9e2da9aa7dd988c8c5a10dea378175d8b237bd42be1e4a9bb236d4da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IlO5Vr1jVo5YlmHsVVLyXK46c3sDH4_W%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58502'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/21ac30c4/jquery.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/21ac30c4/jquery.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959328.484
+    'REQUEST_TIME' => 1479959328
+]
+2016-11-24 03:48:49 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/cb55ec30/yii.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/cb55ec30...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:48:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => '831e8087b9e2da9aa7dd988c8c5a10dea378175d8b237bd42be1e4a9bb236d4da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IlO5Vr1jVo5YlmHsVVLyXK46c3sDH4_W\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=831e8087b9e2da9aa7dd988c8c5a10dea378175d8b237bd42be1e4a9bb236d4da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IlO5Vr1jVo5YlmHsVVLyXK46c3sDH4_W%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58504'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/cb55ec30/yii.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/cb55ec30/yii.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959328.485
+    'REQUEST_TIME' => 1479959328
+]
+2016-11-24 03:48:50 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/cb55ec30/yii.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/cb55ec30...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:48:50 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => '032addc9531e87eab8c5939cdf0a2a0370a189d3b140b0d17e5c153b9c0c6a73a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DEKck9874xEbgNhaO9Tmes6F0z-243gH\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=032addc9531e87eab8c5939cdf0a2a0370a189d3b140b0d17e5c153b9c0c6a73a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DEKck9874xEbgNhaO9Tmes6F0z-243gH%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58504'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/cb55ec30/yii.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/cb55ec30/yii.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959330.041
+    'REQUEST_TIME' => 1479959330
+]
+2016-11-24 03:49:16 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/21ac30c4/jquery.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/21ac30c4...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:49:16 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => 'fc2781b675456479d756f68167cc7f9d02a086ea54dfaa23d49b0b0ba2475706a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5vVI3PFlCSVelkE8r95eAujHwUTMBqZL\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=fc2781b675456479d756f68167cc7f9d02a086ea54dfaa23d49b0b0ba2475706a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225vVI3PFlCSVelkE8r95eAujHwUTMBqZL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58514'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/21ac30c4/jquery.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/21ac30c4/jquery.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959356.873
+    'REQUEST_TIME' => 1479959356
+]
+2016-11-24 03:49:16 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/cb55ec30/yii.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/cb55ec30...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:49:16 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => 'fc2781b675456479d756f68167cc7f9d02a086ea54dfaa23d49b0b0ba2475706a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5vVI3PFlCSVelkE8r95eAujHwUTMBqZL\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=fc2781b675456479d756f68167cc7f9d02a086ea54dfaa23d49b0b0ba2475706a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225vVI3PFlCSVelkE8r95eAujHwUTMBqZL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58524'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/cb55ec30/yii.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/cb55ec30/yii.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959356.89
+    'REQUEST_TIME' => 1479959356
+]
+2016-11-24 03:49:24 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/21ac30c4/jquery.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/21ac30c4...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:49:24 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => '17d58f93f167b85d7181b2ba83d803f4f0b402104f364275cef62f4dddbc0e9ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4YlqjtvD2Um7rgCNjzQedGgWoILLVFvt\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/home'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=17d58f93f167b85d7181b2ba83d803f4f0b402104f364275cef62f4dddbc0e9ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224YlqjtvD2Um7rgCNjzQedGgWoILLVFvt%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58514'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/21ac30c4/jquery.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/21ac30c4/jquery.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959364.673
+    'REQUEST_TIME' => 1479959364
+]
+2016-11-24 03:49:24 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/cb55ec30/yii.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/cb55ec30...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:49:24 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => '17d58f93f167b85d7181b2ba83d803f4f0b402104f364275cef62f4dddbc0e9ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4YlqjtvD2Um7rgCNjzQedGgWoILLVFvt\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/home'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=17d58f93f167b85d7181b2ba83d803f4f0b402104f364275cef62f4dddbc0e9ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224YlqjtvD2Um7rgCNjzQedGgWoILLVFvt%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58514'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/cb55ec30/yii.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/cb55ec30/yii.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959364.783
+    'REQUEST_TIME' => 1479959364
+]
+2016-11-24 03:50:05 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/21ac30c4/jquery.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/21ac30c4...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:50:05 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => 'bc898e08ab05b061bdcee3f49bb0792e72df0f4fd3265629f7fa667860228d27a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RjC2yNx7xACTER3GXPc2MhrnIHw8Aj1a\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/site'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=bc898e08ab05b061bdcee3f49bb0792e72df0f4fd3265629f7fa667860228d27a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RjC2yNx7xACTER3GXPc2MhrnIHw8Aj1a%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58540'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/21ac30c4/jquery.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/21ac30c4/jquery.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959405.399
+    'REQUEST_TIME' => 1479959405
+]
+2016-11-24 03:50:05 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/cb55ec30/yii.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/cb55ec30...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:50:05 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => 'bc898e08ab05b061bdcee3f49bb0792e72df0f4fd3265629f7fa667860228d27a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RjC2yNx7xACTER3GXPc2MhrnIHw8Aj1a\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/site'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=bc898e08ab05b061bdcee3f49bb0792e72df0f4fd3265629f7fa667860228d27a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RjC2yNx7xACTER3GXPc2MhrnIHw8Aj1a%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58542'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/cb55ec30/yii.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/cb55ec30/yii.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959405.421
+    'REQUEST_TIME' => 1479959405
+]
+2016-11-24 03:50:34 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/1a47aeec/yii.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/1a47aeec...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:50:34 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => 'b8a79330a29faac3324d7ffa1f36cdb32f01ca17a94b32d60f5b3fd565be2a45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VOvAAFuOFK1UfevaOXEZ3xjyjEjtQBJK\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-2/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=b8a79330a29faac3324d7ffa1f36cdb32f01ca17a94b32d60f5b3fd565be2a45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VOvAAFuOFK1UfevaOXEZ3xjyjEjtQBJK%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58558'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/1a47aeec/yii.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/1a47aeec/yii.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959434.975
+    'REQUEST_TIME' => 1479959434
+]
+2016-11-24 03:50:35 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/b82fc728/jquery.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/b82fc728...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:50:35 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => 'b8a79330a29faac3324d7ffa1f36cdb32f01ca17a94b32d60f5b3fd565be2a45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VOvAAFuOFK1UfevaOXEZ3xjyjEjtQBJK\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-2/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=b8a79330a29faac3324d7ffa1f36cdb32f01ca17a94b32d60f5b3fd565be2a45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VOvAAFuOFK1UfevaOXEZ3xjyjEjtQBJK%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58566'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/b82fc728/jquery.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/b82fc728/jquery.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959435.192
+    'REQUEST_TIME' => 1479959435
+]
+2016-11-24 03:50:35 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/1a47aeec/yii.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/1a47aeec...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:50:35 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => '4ca6afef715e738ba7f5a42e0653c518a62ddc4438e78c1852b72ffc2bbf121da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lY2VhGndCmqYh9nsKMNXN50aeN7dt1M0\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-2/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=4ca6afef715e738ba7f5a42e0653c518a62ddc4438e78c1852b72ffc2bbf121da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lY2VhGndCmqYh9nsKMNXN50aeN7dt1M0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58566'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/1a47aeec/yii.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/1a47aeec/yii.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959435.233
+    'REQUEST_TIME' => 1479959435
+]
+2016-11-24 03:50:51 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/b7b2d5a8d1b4d64f0e89e293d4ac08eb.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/b7b2d5a8...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:50:51 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => '4fe48d52b844787c37031129c3b2645e12bc51928a81b03dcbede5467964fcd2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Fo80q7Myk2T5hix5KZ0vjQj8ckHfxeYF\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/shop/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=4fe48d52b844787c37031129c3b2645e12bc51928a81b03dcbede5467964fcd2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Fo80q7Myk2T5hix5KZ0vjQj8ckHfxeYF%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_IF_MODIFIED_SINCE' => 'Sat, 05 Nov 2016 05:21:28 GMT'
+    'HTTP_IF_NONE_MATCH' => 'W/\"15d3-54086f678eac5\"'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58572'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/b7b2d5a8d1b4d64f0e89e293d4ac08eb.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/b7b2d5a8d1b4d64f0e89e293d4ac08eb.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959451.833
+    'REQUEST_TIME' => 1479959451
+]
+2016-11-24 03:50:51 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/c22c60349630d688cef20a3fd708ad87.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/c22c6034...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:50:51 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => '4fe48d52b844787c37031129c3b2645e12bc51928a81b03dcbede5467964fcd2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Fo80q7Myk2T5hix5KZ0vjQj8ckHfxeYF\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/shop/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=4fe48d52b844787c37031129c3b2645e12bc51928a81b03dcbede5467964fcd2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Fo80q7Myk2T5hix5KZ0vjQj8ckHfxeYF%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_IF_MODIFIED_SINCE' => 'Fri, 04 Nov 2016 23:18:14 GMT'
+    'HTTP_IF_NONE_MATCH' => 'W/\"2335-54081e36df216\"'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58568'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/c22c60349630d688cef20a3fd708ad87.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/c22c60349630d688cef20a3fd708ad87.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959451.835
+    'REQUEST_TIME' => 1479959451
+]
+2016-11-24 03:50:51 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/2f15587a6a4cc31383bf0dd1c995333b.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/2f15587a...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:50:51 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => '4fe48d52b844787c37031129c3b2645e12bc51928a81b03dcbede5467964fcd2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Fo80q7Myk2T5hix5KZ0vjQj8ckHfxeYF\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/shop/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=4fe48d52b844787c37031129c3b2645e12bc51928a81b03dcbede5467964fcd2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Fo80q7Myk2T5hix5KZ0vjQj8ckHfxeYF%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_IF_MODIFIED_SINCE' => 'Sat, 12 Nov 2016 13:47:12 GMT'
+    'HTTP_IF_NONE_MATCH' => 'W/\"1084-5411ad805614c\"'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58570'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/2f15587a6a4cc31383bf0dd1c995333b.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/2f15587a6a4cc31383bf0dd1c995333b.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959451.792
+    'REQUEST_TIME' => 1479959451
+]
+2016-11-24 03:51:36 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/2f15587a6a4cc31383bf0dd1c995333b.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/2f15587a...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:51:36 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => '3e1dcd0127096c941beee14150ef70f53021acd86a622fae43a80a2b7995e174a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xRqVfKdmbHFF4X2v_-NPJoZRZ-uJTYpQ\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/shop/catalog/list?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=3e1dcd0127096c941beee14150ef70f53021acd86a622fae43a80a2b7995e174a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xRqVfKdmbHFF4X2v_-NPJoZRZ-uJTYpQ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58586'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/2f15587a6a4cc31383bf0dd1c995333b.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/2f15587a6a4cc31383bf0dd1c995333b.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959496.58
+    'REQUEST_TIME' => 1479959496
+]
+2016-11-24 03:51:36 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/c22c60349630d688cef20a3fd708ad87.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/c22c6034...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 03:51:36 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => '9psu3ob40go4hjaqhpp8915a73'
+    '_csrf' => '3e1dcd0127096c941beee14150ef70f53021acd86a622fae43a80a2b7995e174a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xRqVfKdmbHFF4X2v_-NPJoZRZ-uJTYpQ\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/shop/catalog/list?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=9psu3ob40go4hjaqhpp8915a73; _csrf=3e1dcd0127096c941beee14150ef70f53021acd86a622fae43a80a2b7995e174a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xRqVfKdmbHFF4X2v_-NPJoZRZ-uJTYpQ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '58584'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/c22c60349630d688cef20a3fd708ad87.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/c22c60349630d688cef20a3fd708ad87.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479959496.584
+    'REQUEST_TIME' => 1479959496
+]
+2016-11-24 15:28:44 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "index.html".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('index.html', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 15:28:44 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'a9rqpmfoc0th927es18bu99c73'
+    '_csrf' => 'eb431039a6fd7e12cdd4461bacb28e487447ce8c46356f14878c0bb5fce14718a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TJrx9FWxDQCLnF2FSKDiF_iyIh79GdwD\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=a9rqpmfoc0th927es18bu99c73; _csrf=eb431039a6fd7e12cdd4461bacb28e487447ce8c46356f14878c0bb5fce14718a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TJrx9FWxDQCLnF2FSKDiF_iyIh79GdwD%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '55848'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/index.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/index.html'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480001324.711
+    'REQUEST_TIME' => 1480001324
+]
+2016-11-24 15:30:18 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/21ac30c4/jquery.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/21ac30c4...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 15:30:18 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'a9rqpmfoc0th927es18bu99c73'
+    '_csrf' => '9d89fdc5f20648d636131b618ddd9436b7a6be993b7c419eecbf16bb74c24b30a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"J0dhxmjxtAxZpNkAEo9GJYX3H_EfW_xw\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=a9rqpmfoc0th927es18bu99c73; _csrf=9d89fdc5f20648d636131b618ddd9436b7a6be993b7c419eecbf16bb74c24b30a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22J0dhxmjxtAxZpNkAEo9GJYX3H_EfW_xw%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '55852'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/21ac30c4/jquery.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/21ac30c4/jquery.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480001418.134
+    'REQUEST_TIME' => 1480001418
+]
+2016-11-24 15:30:18 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/cb55ec30/yii.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/cb55ec30...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 15:30:18 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'a9rqpmfoc0th927es18bu99c73'
+    '_csrf' => '9d89fdc5f20648d636131b618ddd9436b7a6be993b7c419eecbf16bb74c24b30a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"J0dhxmjxtAxZpNkAEo9GJYX3H_EfW_xw\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=a9rqpmfoc0th927es18bu99c73; _csrf=9d89fdc5f20648d636131b618ddd9436b7a6be993b7c419eecbf16bb74c24b30a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22J0dhxmjxtAxZpNkAEo9GJYX3H_EfW_xw%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '55854'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/cb55ec30/yii.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/cb55ec30/yii.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480001418.147
+    'REQUEST_TIME' => 1480001418
+]
+2016-11-24 15:30:18 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/cb55ec30/yii.js".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('assets/cb55ec30...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 15:30:18 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'a9rqpmfoc0th927es18bu99c73'
+    '_csrf' => '422723ed7695e73fbefc217ad144eec5be60ec26b49f4d46df5d183f831d51d1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PspMGz7-1hPhV0L3a5Pr_yjmZ4bIsngZ\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=a9rqpmfoc0th927es18bu99c73; _csrf=422723ed7695e73fbefc217ad144eec5be60ec26b49f4d46df5d183f831d51d1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PspMGz7-1hPhV0L3a5Pr_yjmZ4bIsngZ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '55854'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/assets/cb55ec30/yii.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/assets/cb55ec30/yii.js'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480001418.602
+    'REQUEST_TIME' => 1480001418
+]
+2016-11-24 15:31:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/c22c60349630d688cef20a3fd708ad87.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/c22c6034...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 15:31:02 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'a9rqpmfoc0th927es18bu99c73'
+    '_csrf' => '9442903492c667cb0188463c783b23f76a6fadd130f570bc6acba0d752e88253a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3jVVjsy4-e9jOXjmM9vI3CuVwnmJeZLl\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=a9rqpmfoc0th927es18bu99c73; _csrf=9442903492c667cb0188463c783b23f76a6fadd130f570bc6acba0d752e88253a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223jVVjsy4-e9jOXjmM9vI3CuVwnmJeZLl%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '55864'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/c22c60349630d688cef20a3fd708ad87.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/c22c60349630d688cef20a3fd708ad87.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480001462.339
+    'REQUEST_TIME' => 1480001462
+]
+2016-11-24 15:31:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/b7b2d5a8d1b4d64f0e89e293d4ac08eb.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/b7b2d5a8...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 15:31:02 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'a9rqpmfoc0th927es18bu99c73'
+    '_csrf' => '9442903492c667cb0188463c783b23f76a6fadd130f570bc6acba0d752e88253a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3jVVjsy4-e9jOXjmM9vI3CuVwnmJeZLl\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=a9rqpmfoc0th927es18bu99c73; _csrf=9442903492c667cb0188463c783b23f76a6fadd130f570bc6acba0d752e88253a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223jVVjsy4-e9jOXjmM9vI3CuVwnmJeZLl%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '55856'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/b7b2d5a8d1b4d64f0e89e293d4ac08eb.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/b7b2d5a8d1b4d64f0e89e293d4ac08eb.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480001462.344
+    'REQUEST_TIME' => 1480001462
+]
+2016-11-24 15:31:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/2f15587a6a4cc31383bf0dd1c995333b.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/2f15587a...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 15:31:02 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'a9rqpmfoc0th927es18bu99c73'
+    '_csrf' => '9442903492c667cb0188463c783b23f76a6fadd130f570bc6acba0d752e88253a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3jVVjsy4-e9jOXjmM9vI3CuVwnmJeZLl\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=a9rqpmfoc0th927es18bu99c73; _csrf=9442903492c667cb0188463c783b23f76a6fadd130f570bc6acba0d752e88253a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223jVVjsy4-e9jOXjmM9vI3CuVwnmJeZLl%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '55862'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/2f15587a6a4cc31383bf0dd1c995333b.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/2f15587a6a4cc31383bf0dd1c995333b.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480001462.339
+    'REQUEST_TIME' => 1480001462
+]
+2016-11-24 15:31:37 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/2f15587a6a4cc31383bf0dd1c995333b.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/2f15587a...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 15:31:37 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'a9rqpmfoc0th927es18bu99c73'
+    '_csrf' => '78331df451c894cda1ff656ef68a9893ddf98b0de3495c3aa0cff990656a09e2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ymKwMEOQdqfOzFjRfudWE1CukV-WRE_h\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=a9rqpmfoc0th927es18bu99c73; _csrf=78331df451c894cda1ff656ef68a9893ddf98b0de3495c3aa0cff990656a09e2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ymKwMEOQdqfOzFjRfudWE1CukV-WRE_h%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '55882'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/2f15587a6a4cc31383bf0dd1c995333b.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/2f15587a6a4cc31383bf0dd1c995333b.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480001497.825
+    'REQUEST_TIME' => 1480001497
+]
+2016-11-24 15:31:37 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/c22c60349630d688cef20a3fd708ad87.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/c22c6034...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 15:31:37 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'a9rqpmfoc0th927es18bu99c73'
+    '_csrf' => '78331df451c894cda1ff656ef68a9893ddf98b0de3495c3aa0cff990656a09e2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ymKwMEOQdqfOzFjRfudWE1CukV-WRE_h\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=a9rqpmfoc0th927es18bu99c73; _csrf=78331df451c894cda1ff656ef68a9893ddf98b0de3495c3aa0cff990656a09e2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ymKwMEOQdqfOzFjRfudWE1CukV-WRE_h%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '55884'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/c22c60349630d688cef20a3fd708ad87.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/c22c60349630d688cef20a3fd708ad87.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480001497.832
+    'REQUEST_TIME' => 1480001497
+]
+2016-11-24 15:31:37 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/b7b2d5a8d1b4d64f0e89e293d4ac08eb.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/b7b2d5a8...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 15:31:37 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'a9rqpmfoc0th927es18bu99c73'
+    '_csrf' => '78331df451c894cda1ff656ef68a9893ddf98b0de3495c3aa0cff990656a09e2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ymKwMEOQdqfOzFjRfudWE1CukV-WRE_h\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=a9rqpmfoc0th927es18bu99c73; _csrf=78331df451c894cda1ff656ef68a9893ddf98b0de3495c3aa0cff990656a09e2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ymKwMEOQdqfOzFjRfudWE1CukV-WRE_h%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '55882'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/b7b2d5a8d1b4d64f0e89e293d4ac08eb.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/b7b2d5a8d1b4d64f0e89e293d4ac08eb.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480001497.847
+    'REQUEST_TIME' => 1480001497
+]
+2016-11-24 15:35:14 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/ed5a7fce390dc14465fa62793e41781b.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/ed5a7fce...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 15:35:14 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'b4bse3456jat641m7pu4han1d1'
+    '_csrf' => '78a6608fc231d838c35d6e31f492f6feea3eccc9691880c00c18605ad345240fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XBQAejboJC4RVrCNBbNXHWOk0hJmVISv\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/adm/image/index?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=b4bse3456jat641m7pu4han1d1; _csrf=78a6608fc231d838c35d6e31f492f6feea3eccc9691880c00c18605ad345240fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XBQAejboJC4RVrCNBbNXHWOk0hJmVISv%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '55930'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/ed5a7fce390dc14465fa62793e41781b.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/ed5a7fce390dc14465fa62793e41781b.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480001714.565
+    'REQUEST_TIME' => 1480001714
+]
+2016-11-24 15:35:14 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/2f15587a6a4cc31383bf0dd1c995333b.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/2f15587a...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 15:35:14 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'b4bse3456jat641m7pu4han1d1'
+    '_csrf' => '78a6608fc231d838c35d6e31f492f6feea3eccc9691880c00c18605ad345240fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XBQAejboJC4RVrCNBbNXHWOk0hJmVISv\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/adm/image/index?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=b4bse3456jat641m7pu4han1d1; _csrf=78a6608fc231d838c35d6e31f492f6feea3eccc9691880c00c18605ad345240fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XBQAejboJC4RVrCNBbNXHWOk0hJmVISv%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '55926'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/2f15587a6a4cc31383bf0dd1c995333b.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/2f15587a6a4cc31383bf0dd1c995333b.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480001714.554
+    'REQUEST_TIME' => 1480001714
+]
+2016-11-24 15:35:28 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/2f15587a6a4cc31383bf0dd1c995333b.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/2f15587a...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 15:35:28 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'b4bse3456jat641m7pu4han1d1'
+    '_csrf' => '38a355d93d63d0b8048eb3178998eee26f60fe20d520b793d74dd3ae6d1e29fba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lpw2Ml97YR4X_MdMzTRCyzIcStMB4mJ1\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/adm/image/index?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=b4bse3456jat641m7pu4han1d1; _csrf=38a355d93d63d0b8048eb3178998eee26f60fe20d520b793d74dd3ae6d1e29fba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lpw2Ml97YR4X_MdMzTRCyzIcStMB4mJ1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '55934'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/2f15587a6a4cc31383bf0dd1c995333b.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/2f15587a6a4cc31383bf0dd1c995333b.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480001728.453
+    'REQUEST_TIME' => 1480001728
+]
+2016-11-24 15:35:28 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/ed5a7fce390dc14465fa62793e41781b.jpg".' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Module.php:462
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('images/ed5a7fce...', Array)
+#1 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/yii2-shop/vendor/yiisoft/yii2/web/Application.php:112
+Stack trace:
+#0 /var/www/html/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2-shop/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-24 15:35:28 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => '3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_\",2592000]\";}'
+    'PHPSESSID' => 'b4bse3456jat641m7pu4han1d1'
+    '_csrf' => '38a355d93d63d0b8048eb3178998eee26f60fe20d520b793d74dd3ae6d1e29fba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lpw2Ml97YR4X_MdMzTRCyzIcStMB4mJ1\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2-shop-lama/adm/image/index?id=1'
+    'HTTP_COOKIE' => '_identity=3734cfefc232a27beb7ee9233666c7b35e902883d1cba489c55a25020c7b6f25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22wrUcO_LSXN0VqIT2dW4vfSgEGUoHySK_%22%2C2592000%5D%22%3B%7D; PHPSESSID=b4bse3456jat641m7pu4han1d1; _csrf=38a355d93d63d0b8048eb3178998eee26f60fe20d520b793d74dd3ae6d1e29fba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lpw2Ml97YR4X_MdMzTRCyzIcStMB4mJ1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2-shop/frontend/web/index.php'
+    'REMOTE_PORT' => '55936'
+    'REDIRECT_URL' => '/yii2-shop/frontend/web/images/ed5a7fce390dc14465fa62793e41781b.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-shop/images/ed5a7fce390dc14465fa62793e41781b.jpg'
+    'SCRIPT_NAME' => '/yii2-shop/frontend/web/index.php'
+    'PHP_SELF' => '/yii2-shop/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480001728.461
+    'REQUEST_TIME' => 1480001728
+]

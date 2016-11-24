@@ -4,7 +4,7 @@ use yii\helpers\Html;
 ///use yii\bootstrap\NavBar;
 //use yii\widgets\Breadcrumbs;
 use frontend\assets\TokoAsset;
-use frontend\widgets\Alert;
+//use frontend\widgets\Alert;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -29,6 +29,14 @@ TokoAsset::register($this);
 <div class="navbar navbar-fixed-top">
               <div class="navbar-inner">
                 <div class="container">
+                	<a id="logoM" href="index.html"><img src="img/logo.png" alt="Bootsshop"/>
+                	</a>
+
+            	  <a data-target="#sidebar" data-toggle="collapse" class="btn btn-navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </a>
                   <div class="nav-collapse">
                     <ul class="nav">
 					  <li class="active"><a href="index.html">Home	</a></li>
@@ -71,10 +79,8 @@ TokoAsset::register($this);
 <div class="span12">
 	<a href="index.html"><img src="img/logo.png" alt="Bootsshop"/></a>
 <div class="pull-right"> <br/>
-	<a href="product_summary.html"> <span class="btn btn-mini btn-warning"> <i class="icon-shopping-cart icon-white"></i> [ 3 ] </span> </a>
-	<a href="product_summary.html"><span class="btn btn-mini active">$155.00</span></a>
-	<span class="btn btn-mini">&pound;</span>
-	<span class="btn btn-mini">&euro;</span> 
+	<a href="product_summary.html"> <span class="btn btn-medium btn-warning"> <i class="icon-shopping-cart icon-white"></i> [ 3 ] </span> </a>
+	<a href="product_summary.html"><span class="btn btn-medium btn-success">Rp. 155.00</span></a>
 </div>
 </div>
 </div>
