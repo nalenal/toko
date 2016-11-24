@@ -40,7 +40,7 @@ class UploadedFile extends Object
     public $tempName;
     /**
      * @var string the MIME-type of the uploaded file (such as "image/gif").
-     * Since this MIME type is not checked on the server-side, do not take this value for granted.
+     * Since this MIME type is not checked on the server side, do not take this value for granted.
      * Instead, use [[\yii\helpers\FileHelper::getMimeType()]] to determine the exact MIME type.
      */
     public $type;
@@ -102,13 +102,13 @@ class UploadedFile extends Object
      * Returns an uploaded file according to the given file input name.
      * The name can be a plain string or a string like an array element (e.g. 'Post[imageFile]', or 'Post[0][imageFile]').
      * @param string $name the name of the file input field.
-     * @return null|UploadedFile the instance of the uploaded file.
+     * @return UploadedFile the instance of the uploaded file.
      * Null is returned if no file is uploaded for the specified name.
      */
     public static function getInstanceByName($name)
     {
         $files = self::loadFiles();
-        return isset($files[$name]) ? new static($files[$name]) : null;
+        return isset($files[$name]) ? $files[$name] : null;
     }
 
     /**
@@ -116,7 +116,7 @@ class UploadedFile extends Object
      * This is mainly used when multiple files were uploaded and saved as 'files[0]', 'files[1]',
      * 'files[n]'..., and you can retrieve them all by passing 'files' as the name.
      * @param string $name the name of the array of files
-     * @return UploadedFile[] the array of UploadedFile objects. Empty array is returned
+     * @return UploadedFile[] the array of CUploadedFile objects. Empty array is returned
      * if no adequate upload was found. Please note that this array will contain
      * all files from all sub-arrays regardless how deeply nested they are.
      */
@@ -124,12 +124,12 @@ class UploadedFile extends Object
     {
         $files = self::loadFiles();
         if (isset($files[$name])) {
-            return [new static($files[$name])];
+            return [$files[$name]];
         }
         $results = [];
         foreach ($files as $key => $file) {
             if (strpos($key, "{$name}[") === 0) {
-                $results[] = new static($file);
+                $results[] = $file;
             }
         }
         return $results;
@@ -171,9 +171,7 @@ class UploadedFile extends Object
      */
     public function getBaseName()
     {
-        // https://github.com/yiisoft/yii2/issues/11012
-        $pathInfo = pathinfo('_' . $this->name, PATHINFO_FILENAME);
-        return mb_substr($pathInfo, 1, mb_strlen($pathInfo, '8bit'), '8bit');
+        return pathinfo($this->name, PATHINFO_FILENAME);
     }
 
     /**
@@ -225,14 +223,14 @@ class UploadedFile extends Object
             foreach ($names as $i => $name) {
                 self::loadFilesRecursive($key . '[' . $i . ']', $name, $tempNames[$i], $types[$i], $sizes[$i], $errors[$i]);
             }
-        } elseif ((int)$errors !== UPLOAD_ERR_NO_FILE) {
-            self::$_files[$key] = [
+        } elseif ($errors !== UPLOAD_ERR_NO_FILE) {
+            self::$_files[$key] = new static([
                 'name' => $names,
                 'tempName' => $tempNames,
                 'type' => $types,
                 'size' => $sizes,
                 'error' => $errors,
-            ];
+            ]);
         }
     }
 }

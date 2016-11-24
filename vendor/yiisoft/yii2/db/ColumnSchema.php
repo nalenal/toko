@@ -27,7 +27,7 @@ class ColumnSchema extends Object
     public $allowNull;
     /**
      * @var string abstract type of this column. Possible abstract types include:
-     * char, string, text, boolean, smallint, integer, bigint, float, decimal, datetime,
+     * string, text, boolean, smallint, integer, bigint, float, decimal, datetime,
      * timestamp, time, date, binary, and money.
      */
     public $type;
@@ -113,7 +113,7 @@ class ColumnSchema extends Object
      */
     protected function typecast($value)
     {
-        if ($value === '' && $this->type !== Schema::TYPE_TEXT && $this->type !== Schema::TYPE_STRING && $this->type !== Schema::TYPE_BINARY && $this->type !== Schema::TYPE_CHAR) {
+        if ($value === '' && $this->type !== Schema::TYPE_TEXT && $this->type !== Schema::TYPE_STRING && $this->type !== Schema::TYPE_BINARY) {
             return null;
         }
         if ($value === null || gettype($value) === $this->phpType || $value instanceof Expression) {
@@ -122,20 +122,11 @@ class ColumnSchema extends Object
         switch ($this->phpType) {
             case 'resource':
             case 'string':
-                if (is_resource($value)) {
-                    return $value;
-                }
-                if (is_float($value)) {
-                    // ensure type cast always has . as decimal separator in all locales
-                    return str_replace(',', '.', (string) $value);
-                }
-                return (string) $value;
+                return is_resource($value) ? $value : (string) $value;
             case 'integer':
                 return (int) $value;
             case 'boolean':
-                // treating a 0 bit value as false too
-                // https://github.com/yiisoft/yii2/issues/9006
-                return (bool) $value && $value !== "\0";
+                return (bool) $value;
             case 'double':
                 return (double) $value;
         }

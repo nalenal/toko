@@ -37,15 +37,15 @@ abstract class BaseListView extends Widget
     /**
      * @var array the configuration for the pager widget. By default, [[LinkPager]] will be
      * used to render the pager. You can use a different widget class by configuring the "class" element.
-     * Note that the widget must support the `pagination` property which will be populated with the
-     * [[\yii\data\BaseDataProvider::pagination|pagination]] value of the [[dataProvider]].
+     * Note that the widget must support the `pagination` property which will be populated with the `pagination` value
+     * of [[dataProvider]].
      */
     public $pager = [];
     /**
      * @var array the configuration for the sorter widget. By default, [[LinkSorter]] will be
      * used to render the sorter. You can use a different widget class by configuring the "class" element.
-     * Note that the widget must support the `sort` property which will be populated with the
-     * [[\yii\data\BaseDataProvider::sort|sort]] value of the [[dataProvider]].
+     * Note that the widget must support the `sort` property which will be populated with the `sort` value
+     * of [[dataProvider]].
      */
     public $sorter = [];
     /**
@@ -130,10 +130,8 @@ abstract class BaseListView extends Widget
         } else {
             $content = $this->renderEmpty();
         }
-
-        $options = $this->options;
-        $tag = ArrayHelper::remove($options, 'tag', 'div');
-        echo Html::tag($tag, $content, $options);
+        $tag = ArrayHelper::remove($this->options, 'tag', 'div');
+        echo Html::tag($tag, $content, $this->options);
     }
 
     /**
@@ -165,9 +163,8 @@ abstract class BaseListView extends Widget
      */
     public function renderEmpty()
     {
-        $options = $this->emptyTextOptions;
-        $tag = ArrayHelper::remove($options, 'tag', 'div');
-        return Html::tag($tag, $this->emptyText, $options);
+        $tag = ArrayHelper::remove($this->emptyTextOptions, 'tag', 'div');
+        return Html::tag($tag, ($this->emptyText === null ? Yii::t('yii', 'No results found.') : $this->emptyText), $this->emptyTextOptions);
     }
 
     /**
@@ -179,8 +176,7 @@ abstract class BaseListView extends Widget
         if ($count <= 0) {
             return '';
         }
-        $summaryOptions = $this->summaryOptions;
-        $tag = ArrayHelper::remove($summaryOptions, 'tag', 'div');
+        $tag = ArrayHelper::remove($this->summaryOptions, 'tag', 'div');
         if (($pagination = $this->dataProvider->getPagination()) !== false) {
             $totalCount = $this->dataProvider->getTotalCount();
             $begin = $pagination->getPage() * $pagination->pageSize + 1;
@@ -198,7 +194,7 @@ abstract class BaseListView extends Widget
                         'totalCount' => $totalCount,
                         'page' => $page,
                         'pageCount' => $pageCount,
-                    ]), $summaryOptions);
+                    ]), $this->summaryOptions);
             }
         } else {
             $begin = $page = $pageCount = 1;
@@ -211,7 +207,7 @@ abstract class BaseListView extends Widget
                     'totalCount' => $totalCount,
                     'page' => $page,
                     'pageCount' => $pageCount,
-                ]), $summaryOptions);
+                ]), $this->summaryOptions);
             }
         }
 

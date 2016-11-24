@@ -11,7 +11,7 @@
 /**
  * A Mailbox Address MIME Header for something like From or Sender.
  *
- * @author Chris Corbyn
+ * @author     Chris Corbyn
  */
 class Swift_Mime_Headers_MailboxHeader extends Swift_Mime_Headers_AbstractHeader
 {
@@ -68,9 +68,9 @@ class Swift_Mime_Headers_MailboxHeader extends Swift_Mime_Headers_AbstractHeader
      *
      * This method returns an associative array like {@link getNameAddresses()}
      *
-     * @throws Swift_RfcComplianceException
-     *
      * @return array
+     *
+     * @throws Swift_RfcComplianceException
      */
     public function getFieldBodyModel()
     {
@@ -128,9 +128,9 @@ class Swift_Mime_Headers_MailboxHeader extends Swift_Mime_Headers_AbstractHeader
      * @see getNameAddresses()
      * @see toString()
      *
-     * @throws Swift_RfcComplianceException
-     *
      * @return string[]
+     *
+     * @throws Swift_RfcComplianceException
      */
     public function getNameAddressStrings()
     {
@@ -224,9 +224,9 @@ class Swift_Mime_Headers_MailboxHeader extends Swift_Mime_Headers_AbstractHeader
      *
      * @see toString()
      *
-     * @throws Swift_RfcComplianceException
-     *
      * @return string
+     *
+     * @throws Swift_RfcComplianceException
      */
     public function getFieldBody()
     {
@@ -270,14 +270,16 @@ class Swift_Mime_Headers_MailboxHeader extends Swift_Mime_Headers_AbstractHeader
     /**
      * Produces a compliant, formatted display-name based on the string given.
      *
-     * @param string $displayName as displayed
-     * @param bool   $shorten     the first line to make remove for header name
+     * @param string  $displayName as displayed
+     * @param bool    $shorten     the first line to make remove for header name
      *
      * @return string
      */
     protected function createDisplayNameString($displayName, $shorten = false)
     {
-        return $this->createPhrase($this, $displayName, $this->getCharset(), $this->getEncoder(), $shorten);
+        return $this->createPhrase($this, $displayName,
+            $this->getCharset(), $this->getEncoder(), $shorten
+            );
     }
 
     /**
@@ -285,9 +287,9 @@ class Swift_Mime_Headers_MailboxHeader extends Swift_Mime_Headers_AbstractHeader
      *
      * @param string[] $mailboxes
      *
-     * @throws Swift_RfcComplianceException
-     *
      * @return string
+     *
+     * @throws Swift_RfcComplianceException
      */
     protected function createMailboxListString(array $mailboxes)
     {
@@ -297,9 +299,8 @@ class Swift_Mime_Headers_MailboxHeader extends Swift_Mime_Headers_AbstractHeader
     /**
      * Redefine the encoding requirements for mailboxes.
      *
-     * All "specials" must be encoded as the full header value will not be quoted
-     * 
-     * @see RFC 2822 3.2.1
+     * Commas and semicolons are used to separate
+     * multiple addresses, and should therefore be encoded
      *
      * @param string $token
      *
@@ -307,7 +308,7 @@ class Swift_Mime_Headers_MailboxHeader extends Swift_Mime_Headers_AbstractHeader
      */
     protected function tokenNeedsEncoding($token)
     {
-        return preg_match('/[()<>\[\]:;@\,."]/', $token) || parent::tokenNeedsEncoding($token);
+        return preg_match('/[,;]/', $token) || parent::tokenNeedsEncoding($token);
     }
 
     /**

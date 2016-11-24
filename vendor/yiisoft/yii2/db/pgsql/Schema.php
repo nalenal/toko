@@ -15,8 +15,6 @@ use yii\db\ColumnSchema;
  * Schema is the class for retrieving metadata from a PostgreSQL database
  * (version 9.x and above).
  *
- * @property string[] $viewNames All view names in the database. This property is read-only.
- *
  * @author Gevik Babakhani <gevikb@gmail.com>
  * @since 2.0
  */
@@ -47,9 +45,8 @@ class Schema extends \yii\db\Schema
         'polygon' => self::TYPE_STRING,
         'path' => self::TYPE_STRING,
 
-        'character' => self::TYPE_CHAR,
-        'char' => self::TYPE_CHAR,
-        'bpchar' => self::TYPE_CHAR,
+        'character' => self::TYPE_STRING,
+        'char' => self::TYPE_STRING,
         'character varying' => self::TYPE_STRING,
         'varchar' => self::TYPE_STRING,
         'text' => self::TYPE_TEXT,
@@ -107,13 +104,8 @@ class Schema extends \yii\db\Schema
         'uuid' => self::TYPE_STRING,
         'json' => self::TYPE_STRING,
         'jsonb' => self::TYPE_STRING,
-        'xml' => self::TYPE_STRING,
+        'xml' => self::TYPE_STRING
     ];
-
-    /**
-     * @var array list of ALL view names in the database
-     */
-    private $_viewNames = [];
 
 
     /**
@@ -175,24 +167,6 @@ class Schema extends \yii\db\Schema
     }
 
     /**
-     * Returns all schema names in the database, including the default one but not system schemas.
-     * This method should be overridden by child classes in order to support this feature
-     * because the default implementation simply throws an exception.
-     * @return array all schema names in the database, except system schemas
-     * @since 2.0.4
-     */
-    protected function findSchemaNames()
-    {
-        $sql = <<<SQL
-SELECT ns.nspname AS schema_name
-FROM pg_namespace ns
-WHERE ns.nspname != 'information_schema' AND ns.nspname NOT LIKE 'pg_%'
-ORDER BY ns.nspname
-SQL;
-        return $this->db->createCommand($sql)->queryColumn();
-    }
-
-    /**
      * Returns all table names in the database.
      * @param string $schema the schema of the tables. Defaults to empty string, meaning the current or default schema.
      * @return array all table names in the database. The names have NO schema name prefix.
@@ -202,14 +176,12 @@ SQL;
         if ($schema === '') {
             $schema = $this->defaultSchema;
         }
-        $sql = <<<SQL
-SELECT c.relname AS table_name
-FROM pg_class c
-INNER JOIN pg_namespace ns ON ns.oid = c.relnamespace
-WHERE ns.nspname = :schemaName AND c.relkind IN ('r','v','m','f')
-ORDER BY c.relname
-SQL;
-        $command = $this->db->createCommand($sql, [':schemaName' => $schema]);
+        $sql = <<<EOD
+SELECT table_name, table_schema FROM information_schema.tables
+WHERE table_schema=:schema AND table_type='BASE TABLE'
+EOD;
+        $command = $this->db->createCommand($sql);
+        $command->bindParam(':schema', $schema);
         $rows = $command->queryAll();
         $names = [];
         foreach ($rows as $row) {
@@ -217,52 +189,6 @@ SQL;
         }
 
         return $names;
-    }
-
-    /**
-     * Returns all views names in the database.
-     * @param string $schema the schema of the views. Defaults to empty string, meaning the current or default schema.
-     * @return array all views names in the database. The names have NO schema name prefix.
-     * @since 2.0.9
-     */
-    protected function findViewNames($schema = '')
-    {
-        if ($schema === '') {
-            $schema = $this->defaultSchema;
-        }
-        $sql = <<<SQL
-SELECT c.relname AS table_name
-FROM pg_class c
-INNER JOIN pg_namespace ns ON ns.oid = c.relnamespace
-WHERE ns.nspname = :schemaName AND c.relkind = 'v'
-ORDER BY c.relname
-SQL;
-        $command = $this->db->createCommand($sql, [':schemaName' => $schema]);
-        $rows = $command->queryAll();
-        $names = [];
-        foreach ($rows as $row) {
-            $names[] = $row['table_name'];
-        }
-
-        return $names;
-    }
-
-    /**
-     * Returns all view names in the database.
-     * @param string $schema the schema of the views. Defaults to empty string, meaning the current or default schema name.
-     * If not empty, the returned view names will be prefixed with the schema name.
-     * @param boolean $refresh whether to fetch the latest available view names. If this is false,
-     * view names fetched previously (if available) will be returned.
-     * @return string[] all view names in the database.
-     * @since 2.0.9
-     */
-    public function getViewNames($schema = '', $refresh = false)
-    {
-        if (!isset($this->_viewNames[$schema]) || $refresh) {
-            $this->_viewNames[$schema] = $this->findViewNames($schema);
-        }
-
-        return $this->_viewNames[$schema];
     }
 
     /**
@@ -280,106 +206,104 @@ SQL;
 
         $sql = <<<SQL
 select
-    ct.conname as constraint_name,
-    a.attname as column_name,
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.conrelid and attnum = any(ct.conkey)) as columns,
     fc.relname as foreign_table_name,
     fns.nspname as foreign_table_schema,
-    fa.attname as foreign_column_name
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.confrelid and attnum = any(ct.confkey)) as foreign_columns
 from
-    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
-       FROM pg_constraint ct
-    ) AS ct
+    pg_constraint ct
     inner join pg_class c on c.oid=ct.conrelid
     inner join pg_namespace ns on c.relnamespace=ns.oid
-    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
     left join pg_class fc on fc.oid=ct.confrelid
     left join pg_namespace fns on fc.relnamespace=fns.oid
-    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+
 where
     ct.contype='f'
     and c.relname={$tableName}
     and ns.nspname={$tableSchema}
-order by
-    fns.nspname, fc.relname, a.attnum
 SQL;
 
-        $constraints = [];
-        foreach ($this->db->createCommand($sql)->queryAll() as $constraint) {
+        $constraints = $this->db->createCommand($sql)->queryAll();
+        foreach ($constraints as $constraint) {
+            $columns = explode(',', $constraint['columns']);
+            $fcolumns = explode(',', $constraint['foreign_columns']);
             if ($constraint['foreign_table_schema'] !== $this->defaultSchema) {
                 $foreignTable = $constraint['foreign_table_schema'] . '.' . $constraint['foreign_table_name'];
             } else {
                 $foreignTable = $constraint['foreign_table_name'];
             }
-            $name = $constraint['constraint_name'];
-            if (!isset($constraints[$name])) {
-                $constraints[$name] = [
-                    'tableName' => $foreignTable,
-                    'columns' => [],
-                ];
+            $citem = [$foreignTable];
+            foreach ($columns as $idx => $column) {
+                $citem[$column] = $fcolumns[$idx];
             }
-            $constraints[$name]['columns'][$constraint['column_name']] = $constraint['foreign_column_name'];
-        }
-        foreach ($constraints as $constraint) {
-            $table->foreignKeys[] = array_merge([$constraint['tableName']], $constraint['columns']);
+            $table->foreignKeys[] = $citem;
         }
     }
 
     /**
      * Gets information about given table unique indexes.
      * @param TableSchema $table the table metadata
-     * @return array with index and column names
+     * @return array with index names, columns and if it is an expression tree
      */
     protected function getUniqueIndexInformation($table)
     {
+        $tableName = $this->quoteValue($table->name);
+        $tableSchema = $this->quoteValue($table->schemaName);
+
         $sql = <<<SQL
 SELECT
     i.relname as indexname,
-    pg_get_indexdef(idx.indexrelid, k + 1, TRUE) AS columnname
-FROM (
-  SELECT *, generate_subscripts(indkey, 1) AS k
-  FROM pg_index
-) idx
+    ARRAY(
+        SELECT pg_get_indexdef(idx.indexrelid, k + 1, True)
+        FROM generate_subscripts(idx.indkey, 1) AS k
+        ORDER BY k
+    ) AS indexcolumns,
+    idx.indexprs IS NOT NULL AS indexprs
+FROM pg_index idx
 INNER JOIN pg_class i ON i.oid = idx.indexrelid
 INNER JOIN pg_class c ON c.oid = idx.indrelid
 INNER JOIN pg_namespace ns ON c.relnamespace = ns.oid
-WHERE idx.indisprimary = FALSE AND idx.indisunique = TRUE
-AND c.relname = :tableName AND ns.nspname = :schemaName
-ORDER BY i.relname, k
+WHERE idx.indisprimary != True
+AND idx.indisunique = True
+AND c.relname = {$tableName}
+AND ns.nspname = {$tableSchema}
+;
 SQL;
 
-        return $this->db->createCommand($sql, [
-            ':schemaName' => $table->schemaName,
-            ':tableName' => $table->name,
-        ])->queryAll();
+        return $this->db->createCommand($sql)->queryAll();
     }
 
     /**
      * Returns all unique indexes for the given table.
      * Each array element is of the following structure:
      *
-     * ```php
+     * ~~~
      * [
-     *     'IndexName1' => ['col1' [, ...]],
-     *     'IndexName2' => ['col2' [, ...]],
+     *  'IndexName1' => ['col1' [, ...]],
+     *  'IndexName2' => ['col2' [, ...]],
      * ]
-     * ```
+     * ~~~
      *
      * @param TableSchema $table the table metadata
      * @return array all unique indexes for the given table.
      */
     public function findUniqueIndexes($table)
     {
+        $indexes = $this->getUniqueIndexInformation($table);
         $uniqueIndexes = [];
 
-        $rows = $this->getUniqueIndexInformation($table);
-        foreach ($rows as $row) {
-            $column = $row['columnname'];
-            if (!empty($column) && $column[0] === '"') {
-                // postgres will quote names that are not lowercase-only
-                // https://github.com/yiisoft/yii2/issues/10613
-                $column = substr($column, 1, -1);
+        foreach ($indexes as $index) {
+            $indexName = $index['indexname'];
+
+            if ($index['indexprs']) {
+                // Index is an expression like "lower(colname::text)"
+                $indexColumns = preg_replace("/.*\(([^\:]+).*/mi", "$1", $index['indexcolumns']);
+            } else {
+                $indexColumns = array_map('trim', explode(',', str_replace(['{', '}', '"', '\\'], '', $index['indexcolumns'])));
             }
-            $uniqueIndexes[$row['indexname']][] = $column;
+
+            $uniqueIndexes[$indexName] = $indexColumns;
+
         }
 
         return $uniqueIndexes;
@@ -471,12 +395,8 @@ SQL;
                     $column->defaultValue = bindec(trim($column->defaultValue, 'B\''));
                 } elseif (preg_match("/^'(.*?)'::/", $column->defaultValue, $matches)) {
                     $column->defaultValue = $matches[1];
-                } elseif (preg_match('/^(?:\()?(.*?)(?(1)\))(?:::.+)?$/', $column->defaultValue, $matches)) {
-                    if ($matches[1] === 'NULL') {
-                        $column->defaultValue = null;
-                    } else {
-                        $column->defaultValue = $column->phpTypecast($matches[1]);
-                    }
+                } elseif (preg_match("/^(.*?)::/", $column->defaultValue, $matches)) {
+                    $column->defaultValue = $column->phpTypecast($matches[1]);
                 } else {
                     $column->defaultValue = $column->phpTypecast($column->defaultValue);
                 }
@@ -514,28 +434,5 @@ SQL;
         $column->phpType = $this->getColumnPhpType($column);
 
         return $column;
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function insert($table, $columns)
-    {
-        $params = [];
-        $sql = $this->db->getQueryBuilder()->insert($table, $columns, $params);
-        $returnColumns = $this->getTableSchema($table)->primaryKey;
-        if (!empty($returnColumns)) {
-            $returning = [];
-            foreach ((array) $returnColumns as $name) {
-                $returning[] = $this->quoteColumnName($name);
-            }
-            $sql .= ' RETURNING ' . implode(', ', $returning);
-        }
-
-        $command = $this->db->createCommand($sql, $params);
-        $command->prepare(false);
-        $result = $command->queryOne();
-
-        return !$command->pdoStatement->rowCount() ? false : $result;
     }
 }

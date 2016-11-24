@@ -33,7 +33,7 @@ use yii\web\View;
  * method, for example like this:
  *
  * ```php
- * <?= $form->field($model, 'from_date')->widget(\yii\widgets\MaskedInput::className(), [
+ * <?= $form->field($model, 'from_date')->widget(\yii\widgets\MaskedInput::classname(), [
  *     'mask' => '999-999-9999',
  * ]) ?>
  * ```
@@ -92,12 +92,6 @@ class MaskedInput extends InputWidget
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
      */
     public $options = ['class' => 'form-control'];
-    /**
-     * @var string the type of the input tag. Currently only 'text' and 'tel' are supported.
-     * @see https://github.com/RobinHerbots/jquery.inputmask
-     * @since 2.0.6
-     */
-    public $type = 'text';
 
     /**
      * @var string the hashed variable to store the pluginOptions
@@ -123,30 +117,32 @@ class MaskedInput extends InputWidget
      */
     public function run()
     {
-        $this->registerClientScript();
         if ($this->hasModel()) {
-            echo Html::activeInput($this->type, $this->model, $this->attribute, $this->options);
+            echo Html::activeTextInput($this->model, $this->attribute, $this->options);
         } else {
-            echo Html::input($this->type, $this->name, $this->value, $this->options);
+            echo Html::textInput($this->name, $this->value, $this->options);
         }
+        $this->registerClientScript();
     }
 
     /**
      * Generates a hashed variable to store the plugin `clientOptions`. Helps in reusing the variable for similar
-     * options passed for other widgets on the same page. The following special data attribute will also be
-     * added to the input field to allow accessing the client options via javascript:
+     * options passed for other widgets on the same page. The following special data attributes will also be
+     * setup for the input widget, that can be accessed through javascript:
      *
-     * - 'data-plugin-inputmask' will store the hashed variable storing the plugin options.
+     * - 'data-plugin-options' will store the hashed variable storing the plugin options.
+     * - 'data-plugin-name' the name of the plugin
      *
      * @param View $view the view instance
      * @author [Thiago Talma](https://github.com/thiagotalma)
      */
     protected function hashPluginOptions($view)
     {
-        $encOptions = empty($this->clientOptions) ? '{}' : Json::htmlEncode($this->clientOptions);
+        $encOptions = empty($this->clientOptions) ? '{}' : Json::encode($this->clientOptions);
         $this->_hashVar = self::PLUGIN_NAME . '_' . hash('crc32', $encOptions);
-        $this->options['data-plugin-' . self::PLUGIN_NAME] = $this->_hashVar;
-        $view->registerJs("var {$this->_hashVar} = {$encOptions};", View::POS_READY);
+        $this->options['data-plugin-name'] = self::PLUGIN_NAME;
+        $this->options['data-plugin-options'] = $this->_hashVar;
+        $view->registerJs("var {$this->_hashVar} = {$encOptions};\n", View::POS_HEAD);
     }
 
     /**
@@ -157,7 +153,7 @@ class MaskedInput extends InputWidget
         $options = $this->clientOptions;
         foreach ($options as $key => $value) {
             if (!$value instanceof JsExpression && in_array($key, ['oncomplete', 'onincomplete', 'oncleared', 'onKeyUp',
-                    'onKeyDown', 'onBeforeMask', 'onBeforePaste', 'onUnMask', 'isComplete', 'determineActiveMasksetIndex'], true)
+                    'onKeyDown', 'onBeforeMask', 'onBeforePaste', 'onUnMask', 'isComplete', 'determineActiveMasksetIndex'])
             ) {
                 $options[$key] = new JsExpression($value);
             }
@@ -178,13 +174,13 @@ class MaskedInput extends InputWidget
         }
         $this->hashPluginOptions($view);
         if (is_array($this->definitions) && !empty($this->definitions)) {
-            $js .= ucfirst(self::PLUGIN_NAME) . '.extendDefinitions(' . Json::htmlEncode($this->definitions) . ');';
+            $js .= '$.extend($.' . self::PLUGIN_NAME . '.defaults.definitions, ' . Json::encode($this->definitions) . ");\n";
         }
         if (is_array($this->aliases) && !empty($this->aliases)) {
-            $js .= ucfirst(self::PLUGIN_NAME) . '.extendAliases(' . Json::htmlEncode($this->aliases) . ');';
+            $js .= '$.extend($.' . self::PLUGIN_NAME . '.defaults.aliases, ' . Json::encode($this->aliases) . ");\n";
         }
         $id = $this->options['id'];
-        $js .= 'jQuery("#' . $id . '").' . self::PLUGIN_NAME . '(' . $this->_hashVar . ');';
+        $js .= '$("#' . $id . '").' . self::PLUGIN_NAME . "(" . $this->_hashVar . ");\n";
         MaskedInputAsset::register($view);
         $view->registerJs($js);
     }

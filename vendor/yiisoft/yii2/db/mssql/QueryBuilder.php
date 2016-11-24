@@ -8,7 +8,6 @@
 namespace yii\db\mssql;
 
 use yii\base\InvalidParamException;
-use yii\base\NotSupportedException;
 
 /**
  * QueryBuilder is the query builder for MS SQL Server databases (version 2008 and above).
@@ -23,12 +22,9 @@ class QueryBuilder extends \yii\db\QueryBuilder
      */
     public $typeMap = [
         Schema::TYPE_PK => 'int IDENTITY PRIMARY KEY',
-        Schema::TYPE_UPK => 'int IDENTITY PRIMARY KEY',
         Schema::TYPE_BIGPK => 'bigint IDENTITY PRIMARY KEY',
-        Schema::TYPE_UBIGPK => 'bigint IDENTITY PRIMARY KEY',
-        Schema::TYPE_CHAR => 'nchar(1)',
-        Schema::TYPE_STRING => 'nvarchar(255)',
-        Schema::TYPE_TEXT => 'nvarchar(max)',
+        Schema::TYPE_STRING => 'varchar(255)',
+        Schema::TYPE_TEXT => 'text',
         Schema::TYPE_SMALLINT => 'smallint',
         Schema::TYPE_INTEGER => 'int',
         Schema::TYPE_BIGINT => 'bigint',
@@ -39,7 +35,7 @@ class QueryBuilder extends \yii\db\QueryBuilder
         Schema::TYPE_TIMESTAMP => 'timestamp',
         Schema::TYPE_TIME => 'time',
         Schema::TYPE_DATE => 'date',
-        Schema::TYPE_BINARY => 'varbinary(max)',
+        Schema::TYPE_BINARY => 'binary(1)',
         Schema::TYPE_BOOLEAN => 'bit',
         Schema::TYPE_MONEY => 'decimal(19,4)',
     ];
@@ -56,7 +52,7 @@ class QueryBuilder extends \yii\db\QueryBuilder
         }
 
         if ($this->isOldMssql()) {
-            return $this->oldBuildOrderByAndLimit($sql, $orderBy, $limit, $offset);
+            return $this->oldbuildOrderByAndLimit($sql, $orderBy, $limit, $offset);
         } else {
             return $this->newBuildOrderByAndLimit($sql, $orderBy, $limit, $offset);
         }
@@ -121,28 +117,25 @@ class QueryBuilder extends \yii\db\QueryBuilder
 
     /**
      * Builds a SQL statement for renaming a DB table.
-     * @param string $oldName the table to be renamed. The name will be properly quoted by the method.
+     * @param string $table the table to be renamed. The name will be properly quoted by the method.
      * @param string $newName the new table name. The name will be properly quoted by the method.
      * @return string the SQL statement for renaming a DB table.
      */
-    public function renameTable($oldName, $newName)
+    public function renameTable($table, $newName)
     {
-        return 'sp_rename ' . $this->db->quoteTableName($oldName) . ', ' . $this->db->quoteTableName($newName);
+        return "sp_rename '$table', '$newName'";
     }
 
     /**
      * Builds a SQL statement for renaming a column.
      * @param string $table the table whose column is to be renamed. The name will be properly quoted by the method.
-     * @param string $oldName the old name of the column. The name will be properly quoted by the method.
+     * @param string $name the old name of the column. The name will be properly quoted by the method.
      * @param string $newName the new name of the column. The name will be properly quoted by the method.
      * @return string the SQL statement for renaming a DB column.
      */
-    public function renameColumn($table, $oldName, $newName)
+    public function renameColumn($table, $name, $newName)
     {
-        $table = $this->db->quoteTableName($table);
-        $oldName = $this->db->quoteColumnName($oldName);
-        $newName = $this->db->quoteColumnName($newName);
-        return "sp_rename '{$table}.{$oldName}', {$newName}, 'COLUMN'";
+        return "sp_rename '$table.$name', '$newName', 'COLUMN'";
     }
 
     /**
@@ -187,42 +180,6 @@ class QueryBuilder extends \yii\db\QueryBuilder
     }
 
     /**
-     * @inheritdoc
-     * @since 2.0.8
-     */
-    public function addCommentOnColumn($table, $column, $comment)
-    {
-        return "sp_updateextendedproperty @name = N'MS_Description', @value = {$this->db->quoteValue($comment)}, @level1type = N'Table',  @level1name = {$this->db->quoteTableName($table)}, @level2type = N'Column', @level2name = {$this->db->quoteColumnName($column)}";
-    }
-
-    /**
-     * @inheritdoc
-     * @since 2.0.8
-     */
-    public function addCommentOnTable($table, $comment)
-    {
-        return "sp_updateextendedproperty @name = N'MS_Description', @value = {$this->db->quoteValue($comment)}, @level1type = N'Table',  @level1name = {$this->db->quoteTableName($table)}";
-    }
-
-    /**
-     * @inheritdoc
-     * @since 2.0.8
-     */
-    public function dropCommentFromColumn($table, $column)
-    {
-        return "sp_dropextendedproperty @name = N'MS_Description', @level1type = N'Table',  @level1name = {$this->db->quoteTableName($table)}, @level2type = N'Column', @level2name = {$this->db->quoteColumnName($column)}";
-    }
-
-    /**
-     * @inheritdoc
-     * @since 2.0.8
-     */
-    public function dropCommentFromTable($table)
-    {
-        return "sp_dropextendedproperty @name = N'MS_Description', @level1type = N'Table',  @level1name = {$this->db->quoteTableName($table)}";
-    }
-
-    /**
      * Returns an array of column names given model name
      *
      * @param string $modelClass name of the model class
@@ -236,7 +193,8 @@ class QueryBuilder extends \yii\db\QueryBuilder
         /* @var $model \yii\db\ActiveRecord */
         $model = new $modelClass;
         $schema = $model->getTableSchema();
-        return array_keys($schema->columns);
+        $columns = array_keys($schema->columns);
+        return $columns;
     }
 
     /**
@@ -253,15 +211,20 @@ class QueryBuilder extends \yii\db\QueryBuilder
     {
         if ($this->_oldMssql === null) {
             $pdo = $this->db->getSlavePdo();
-            $version = explode('.', $pdo->getAttribute(\PDO::ATTR_SERVER_VERSION));
+            $version = preg_split("/\./", $pdo->getAttribute(\PDO::ATTR_SERVER_VERSION));
             $this->_oldMssql = $version[0] < 11;
         }
         return $this->_oldMssql;
     }
 
     /**
-     * @inheritdoc
-     * @throws NotSupportedException if `$columns` is an array
+     * Builds SQL for IN condition
+     *
+     * @param string $operator
+     * @param array $columns
+     * @param array $values
+     * @param array $params
+     * @return string SQL
      */
     protected function buildSubqueryInCondition($operator, $columns, $values, &$params)
     {
@@ -302,14 +265,5 @@ class QueryBuilder extends \yii\db\QueryBuilder
         }
 
         return '(' . implode($operator === 'IN' ? ' OR ' : ' AND ', $vss) . ')';
-    }
-
-    /**
-     * @inheritdoc
-     * @since 2.0.8
-     */
-    public function selectExists($rawSql)
-    {
-        return 'SELECT CASE WHEN EXISTS(' . $rawSql . ') THEN 1 ELSE 0 END';
     }
 }

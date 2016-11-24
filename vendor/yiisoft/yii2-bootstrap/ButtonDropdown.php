@@ -8,6 +8,7 @@
 namespace yii\bootstrap;
 
 use yii\helpers\ArrayHelper;
+use yii\helpers\Html;
 
 /**
  * ButtonDropdown renders a group or split button dropdown bootstrap component.
@@ -74,14 +75,13 @@ class ButtonDropdown extends Widget
      */
     public function run()
     {
-        // @todo use [[options]] instead of [[containerOptions]] and introduce [[buttonOptions]] before 2.1 release
-        Html::addCssClass($this->containerOptions, ['widget' => 'btn-group']);
+        Html::addCssClass($this->containerOptions, 'btn-group');
         $options = $this->containerOptions;
         $tag = ArrayHelper::remove($options, 'tag', 'div');
 
         $this->registerPlugin('button');
         return implode("\n", [
-            Html::beginTag($tag, $options),
+            Html::beginTag($tag, $this->containerOptions),
             $this->renderButton(),
             $this->renderDropdown(),
             Html::endTag($tag)
@@ -94,7 +94,7 @@ class ButtonDropdown extends Widget
      */
     protected function renderButton()
     {
-        Html::addCssClass($this->options, ['widget' => 'btn']);
+        Html::addCssClass($this->options, 'btn');
         $label = $this->label;
         if ($this->encodeLabel) {
             $label = Html::encode($label);
@@ -102,8 +102,7 @@ class ButtonDropdown extends Widget
         if ($this->split) {
             $options = $this->options;
             $this->options['data-toggle'] = 'dropdown';
-            Html::addCssClass($this->options, ['toggle' => 'dropdown-toggle']);
-            unset($this->options['id']);
+            Html::addCssClass($this->options, 'dropdown-toggle');
             $splitButton = Button::widget([
                 'label' => '<span class="caret"></span>',
                 'encodeLabel' => false,
@@ -113,10 +112,10 @@ class ButtonDropdown extends Widget
         } else {
             $label .= ' <span class="caret"></span>';
             $options = $this->options;
-            if (!isset($options['href']) && $this->tagName === 'a') {
+            if (!isset($options['href'])) {
                 $options['href'] = '#';
             }
-            Html::addCssClass($options, ['toggle' => 'dropdown-toggle']);
+            Html::addCssClass($options, 'dropdown-toggle');
             $options['data-toggle'] = 'dropdown';
             $splitButton = '';
         }

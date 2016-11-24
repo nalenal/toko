@@ -42,7 +42,7 @@ class TokoAsset extends AssetBundle
         'js/google-code-prettify/prettify.js',
     ];
     public $depends = [
-     //   'yii\web\YiiAsset',
+        'yii\web\YiiAsset',
      //   'yii\bootstrap\BootstrapAsset',
     ];
 }

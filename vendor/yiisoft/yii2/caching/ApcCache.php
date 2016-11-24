@@ -7,14 +7,11 @@
 
 namespace yii\caching;
 
-use yii\base\InvalidConfigException;
-
 /**
  * ApcCache provides APC caching in terms of an application component.
  *
  * To use this application component, the [APC PHP extension](http://www.php.net/apc) must be loaded.
- * Alternatively [APCu PHP extension](http://www.php.net/apcu) could be used via setting `useApcu` to `true`.
- * In order to enable APC or APCu for CLI you should add "apc.enable_cli = 1" to your php.ini.
+ * In order to enable APC for CLI you should add "apc.enable_cli = 1" to your php.ini.
  *
  * See [[Cache]] for common cache operations that ApcCache supports.
  *
@@ -23,29 +20,6 @@ use yii\base\InvalidConfigException;
  */
 class ApcCache extends Cache
 {
-    /**
-     * @var boolean whether to use apcu or apc as the underlying caching extension.
-     * If true, [apcu](http://pecl.php.net/package/apcu) will be used.
-     * If false, [apc](http://pecl.php.net/package/apc) will be used.
-     * Defaults to false.
-     * @since 2.0.7
-     */
-    public $useApcu = false;
-
-
-    /**
-     * Initializes this application component.
-     * It checks if extension required is loaded.
-     */
-    public function init()
-    {
-        parent::init();
-        $extension = $this->useApcu ? 'apcu' : 'apc';
-        if (!extension_loaded($extension)) {
-            throw new InvalidConfigException("ApcCache requires PHP $extension extension to be loaded.");
-        }
-    }
-
     /**
      * Checks whether a specified key exists in the cache.
      * This can be faster than getting the value from the cache if the data is big.
@@ -60,18 +34,18 @@ class ApcCache extends Cache
     {
         $key = $this->buildKey($key);
 
-        return $this->useApcu ? apcu_exists($key) : apc_exists($key);
+        return apc_exists($key);
     }
 
     /**
      * Retrieves a value from cache with a specified key.
      * This is the implementation of the method declared in the parent class.
      * @param string $key a unique key identifying the cached value
-     * @return mixed|false the value stored in cache, false if the value is not in the cache or expired.
+     * @return string|boolean the value stored in cache, false if the value is not in the cache or expired.
      */
     protected function getValue($key)
     {
-        return $this->useApcu ? apcu_fetch($key) : apc_fetch($key);
+        return apc_fetch($key);
     }
 
     /**
@@ -81,7 +55,7 @@ class ApcCache extends Cache
      */
     protected function getValues($keys)
     {
-        $values = $this->useApcu ? apcu_fetch($keys) : apc_fetch($keys);
+        $values = apc_fetch($keys);
         return is_array($values) ? $values : [];
     }
 
@@ -90,14 +64,13 @@ class ApcCache extends Cache
      * This is the implementation of the method declared in the parent class.
      *
      * @param string $key the key identifying the value to be cached
-     * @param mixed $value the value to be cached. Most often it's a string. If you have disabled [[serializer]],
-     * it could be something else.
+     * @param string $value the value to be cached
      * @param integer $duration the number of seconds in which the cached value will expire. 0 means never expire.
-     * @return boolean true if the value is successfully stored into cache, false otherwise.
+     * @return boolean true if the value is successfully stored into cache, false otherwise
      */
     protected function setValue($key, $value, $duration)
     {
-        return $this->useApcu ? apcu_store($key, $value, $duration) : apc_store($key, $value, $duration);
+        return apc_store($key, $value, $duration);
     }
 
     /**
@@ -108,7 +81,7 @@ class ApcCache extends Cache
      */
     protected function setValues($data, $duration)
     {
-        $result = $this->useApcu ? apcu_store($data, null, $duration) : apc_store($data, null, $duration);
+        $result = apc_store($data, null, $duration);
         return is_array($result) ? array_keys($result) : [];
     }
 
@@ -116,14 +89,13 @@ class ApcCache extends Cache
      * Stores a value identified by a key into cache if the cache does not contain this key.
      * This is the implementation of the method declared in the parent class.
      * @param string $key the key identifying the value to be cached
-     * @param mixed $value the value to be cached. Most often it's a string. If you have disabled [[serializer]],
-     * it could be something else.
+     * @param string $value the value to be cached
      * @param integer $duration the number of seconds in which the cached value will expire. 0 means never expire.
      * @return boolean true if the value is successfully stored into cache, false otherwise
      */
     protected function addValue($key, $value, $duration)
     {
-        return $this->useApcu ? apcu_add($key, $value, $duration) : apc_add($key, $value, $duration);
+        return apc_add($key, $value, $duration);
     }
 
     /**
@@ -134,7 +106,7 @@ class ApcCache extends Cache
      */
     protected function addValues($data, $duration)
     {
-        $result = $this->useApcu ? apcu_add($data, null, $duration) : apc_add($data, null, $duration);
+        $result = apc_add($data, null, $duration);
         return is_array($result) ? array_keys($result) : [];
     }
 
@@ -146,7 +118,7 @@ class ApcCache extends Cache
      */
     protected function deleteValue($key)
     {
-        return $this->useApcu ? apcu_delete($key) : apc_delete($key);
+        return apc_delete($key);
     }
 
     /**
@@ -156,6 +128,10 @@ class ApcCache extends Cache
      */
     protected function flushValues()
     {
-        return $this->useApcu ? apcu_clear_cache() : apc_clear_cache('user');
+        if (extension_loaded('apcu')) {
+            return apc_clear_cache();
+        } else {
+            return apc_clear_cache('user');
+        }
     }
 }
