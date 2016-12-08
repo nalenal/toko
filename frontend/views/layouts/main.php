@@ -29,7 +29,7 @@ TokoAsset::register($this);
 <div class="navbar navbar-fixed-top">
               <div class="navbar-inner">
                 <div class="container">
-                	<a id="logoM" href="index.html"><img src="img/logo.png" alt="Bootsshop"/>
+                	<a id="logoM" href="index.html"><img src="<?php echo \Yii::$app->request->baseUrl; ?>/img/logo.png" alt="Bootsshop"/>
                 	</a>
 
             	  <a data-target="#sidebar" data-toggle="collapse" class="btn btn-navbar">
@@ -73,14 +73,17 @@ TokoAsset::register($this);
               </div><!-- /navbar-inner -->
             </div>
 <!-- ======================================================================================================================== -->	
+<?php
+$cart = \Yii::$app->cart;
+?>
 <div id="mainBody" class="container">
 <header id="header">
 <div class="row">
 <div class="span12">
-	<a href="index.html"><img src="img/logo.png" alt="Bootsshop"/></a>
+	<a href="index.html"><img src="<?php echo \Yii::$app->request->baseUrl; ?>/img/logo.png" alt="Bootsshop"/></a>
 <div class="pull-right"> <br/>
-	<a href="product_summary.html"> <span class="btn btn-medium btn-warning"> <i class="icon-shopping-cart icon-white"></i> [ 3 ] </span> </a>
-	<a href="product_summary.html"><span class="btn btn-medium btn-success">Rp. 155.00</span></a>
+	<a href="<?php echo \Yii::$app->request->baseUrl.'/cart/list'; ?>"> <span class="btn btn-medium btn-info"> <i class="icon-shopping-cart icon-white"></i> [ <?= $cart->getCount(); ?> ] </span> </a>
+	<a href="<?php echo \Yii::$app->request->baseUrl.'/cart/list'; ?>"><span class="btn btn-medium btn-warning">Rp. <?= number_format( $cart->getCost(), 0 , '' , '.' ); ?></span></a>
 </div>
 </div>
 </div>
@@ -97,35 +100,30 @@ TokoAsset::register($this);
 <div  id="footerSection">
 	<div class="row">
 		<div class="span3">
-			<h5>ACCOUNT</h6>
+			<h5>TENTANG KAMI</h6>
 			<a href="login.html">YOUR ACCOUNT</a>
 			<a href="login.html">PERSONAL INFORMATION</a> 
-			<a href="login.html">ADDRESSES</a> 
-			<a href="login.html">DISCOUNT</a>  
-			<a href="login.html">ORDER HISTORY</a>
 		 </div>
 		<div class="span3">
 			<h5>INFORMATION</h5>
 			<a href="contact.html">CONTACT</a>  
 			<a href="register.html">REGISTRATION</a>  
 			<a href="legal_notice.html">LEGAL NOTICE</a>  
-			<a href="tac.html">TERMS AND CONDITIONS</a> 
-			<a href="faq.html">FAQ</a>
 		 </div>
 		<div class="span3">
-			<h5>OUR OFFERS</h5>
-			<a href="#">NEW PRODUCTS</a> 
-			<a href="#">TOP SELLERS</a>  
-			<a href="special_offer.html">SPECIAL OFFERS</a>  
-			<a href="#">MANUFACTURERS</a> 
-			<a href="#">SUPPLIERS</a> 
+			<h5>CONTACT US</h5>
+			<img width="25" src="<?php echo \Yii::$app->request->baseUrl; ?>/img/rss.png" title="facebook"/> 08500000001<br />
+			<img width="25" src="<?php echo \Yii::$app->request->baseUrl; ?>/img/rss.png" title="facebook"/> 08500000002<br />
+			<img width="25" src="<?php echo \Yii::$app->request->baseUrl; ?>/img/rss.png" title="facebook"/> 08500000003<br />
 		 </div>
 		<div id="socialMedia" class="span3 pull-right">
 			<h5>SOCIAL MEDIA </h5>
-			<a href="#"><img width="60" src="img/facebook.png" title="facebook"/></a>
-			<a href="#"><img width="60" src="img/twitter.png" title="twitter"/></a>
+			<a href="#"><img width="60" src="<?php echo \Yii::$app->request->baseUrl; ?>/img/facebook.png" title="facebook"/></a>
+			<a href="#"><img width="60" src="<?php echo \Yii::$app->request->baseUrl; ?>/img/twitter.png" title="twitter"/></a>
+			<!--
 			<a href="#"><img width="60" src="img/rss.png" title="rss"/></a>
 			<a href="#"><img width="60" src="img/youtube.png" title="youtube"/></a>
+			-->
 		 </div> 
 	 </div>
 	 <hr class="soft">

@@ -30,7 +30,7 @@ use \yii\helpers\Html;
             <?= Html::encode($product->title) ?>
         </div>
         <div class="col-xs-2">
-            $<?= $product->price ?>
+            Rp. <?= number_format( $product->price, 0 , '' , '.' );?>
         </div>
         <div class="col-xs-2">
             <?= $quantity = $product->getQuantity()?>
@@ -39,7 +39,7 @@ use \yii\helpers\Html;
             <?= Html::a('+', ['cart/update', 'id' => $product->getId(), 'quantity' => $quantity + 1], ['class' => 'btn btn-success'])?>
         </div>
         <div class="col-xs-2">
-            $<?= $product->getCost() ?>
+            Rp. <?= number_format( $product->getCost(), 0 , '' , '.' );?>
         </div>
         <div class="col-xs-2">
             <?= Html::a('×', ['cart/remove', 'id' => $product->getId()], ['class' => 'btn btn-danger'])?>
@@ -51,7 +51,7 @@ use \yii\helpers\Html;
 
         </div>
         <div class="col-xs-2">
-            Total: $<?= $total ?>
+            Total: Rp. <?= number_format( $total, 0 , '' , '.' );?>
         </div>
         <div class="col-xs-2">
             <?= Html::a('Order', ['cart/order'], ['class' => 'btn btn-success'])?>

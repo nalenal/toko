@@ -4,6 +4,7 @@ namespace common\models;
 
 use Yii;
 use yii\web\UploadedFile;
+use yii\imagine\Image; 
 
 /**
  * This is the model class for table "product_image".
@@ -59,10 +60,10 @@ class ProductImage extends \yii\db\ActiveRecord
     /*
     *
     */
-    public function upload()
+    public function upload($id)
     {
         if($this->validate()) {
-            $dirSaving = Yii::getAlias('@frontend/web/uploads').'/1';
+            $dirSaving = Yii::getAlias('@frontend/web/uploads').'/'.$id;
             //mengecek keberadaan direktori  
             if((!file_exists($dirSaving))&&(!is_dir($dirSaving)))    
             {    
@@ -71,6 +72,10 @@ class ProductImage extends \yii\db\ActiveRecord
             $imageName = $this->imageFile->baseName;
             $imageExtension = $this->imageFile->extension;
             $this->imageFile->saveAs($dirSaving.'/'. $imageName . '.' . $imageExtension );
+
+            Image::thumbnail($dirSaving.'/'. $imageName . '.' . $imageExtension , 130, 110)
+                    ->save( $dirSaving.'/thumb-'. $imageName . '.' . $imageExtension, ['quality' => 60]);
+
             return true;
         }
         else {

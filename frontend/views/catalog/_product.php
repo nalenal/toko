@@ -3,12 +3,12 @@ use yii\helpers\Html;
 use yii\helpers\Markdown;
 ?>
 <?php /** @var $model \common\models\Product */ ?>
-<div class="col-xs-12 well">
-    <div class="col-xs-2">
+<div class="col-xs-12 col-sm-12 col-lg-4 col-xl-4 well">
+    <div class="col-xs-12">
         <?php
         $images = $model->images;
         if (isset($images[0])) {
-            echo Html::img($images[0]->getUrl(), ['width' => '100%']);
+            echo Html::img($images[0]->getUrl(), ['width' => '5%']);
         }
         ?>
     </div>
