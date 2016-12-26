@@ -106,7 +106,7 @@ class ProductImageController extends Controller
     {
         $this->findModel($id)->delete();
 
-        return $this->redirect(['index']);
+        return $this->redirect(['upload', 'id'=>$id]);
     }
 
     /**
@@ -144,6 +144,7 @@ class ProductImageController extends Controller
 
             $form->imageFile = UploadedFile::getInstance($form, 'imageFile');
             
+        //    $imageUploaded = $form->upload($id);
             if($form->upload($id)) {
                 //upload sukses
                 $modelProductImage->product_id = $id;

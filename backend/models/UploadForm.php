@@ -32,6 +32,7 @@ class UploadForm extends Model
             {    
                 mkdir ($dirSaving, 0777);         
             }
+        //    $imageName = $this->imageFile->baseName.'-'.time();
             $imageName = $this->imageFile->baseName;
             $imageExtension = $this->imageFile->extension;
             $this->imageFile->saveAs($dirSaving.'/'. $imageName . '.' . $imageExtension );

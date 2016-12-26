@@ -43,7 +43,7 @@ Class LeftMenu extends Widget
                 $menuItems[$category->id] = [
                     'active' => $activeId === $category->id,
                     'label' => $category->title,
-                    'url' => ['catalog/list', 'id' => $category->id],
+                    'url' => 'katalog/list?kategori='.$category->slug,
                     'items' => $this->getMenuItems($categories, $activeId, $category->id),
                 ];
             }

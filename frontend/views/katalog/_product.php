@@ -15,8 +15,8 @@ use yii\helpers\Markdown;
         ?>
     </div>
     <div class="caption col-xs-12">
-        <h3><?= Html::encode($model->title) ?></h3>
-        <?= Markdown::process($model->description) ?>
+        <h4><?= Html::encode($model->title) ?></h4>
+        <p><?= Html::encode($model->description) ?></p>
 
         <h4>
             <div class="pull-left">Rp. <?= number_format( $model->price, 0 , '' , '.' );?></div>

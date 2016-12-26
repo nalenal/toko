@@ -11,9 +11,9 @@
 	
 		<ul class="nav nav-list bs-docs-sidenav" style="display: block;">
 			<strong>
-		KATEGORI
+		KATEGORI MENU KAMI
 		</strong>
-
+		<br />
 		<?php
 
 		echo LeftMenu::widget();	

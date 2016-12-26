@@ -60,6 +60,7 @@ class ProductImage extends \yii\db\ActiveRecord
     /*
     *
     */
+    /*
     public function upload($id)
     {
         if($this->validate()) {
@@ -83,7 +84,7 @@ class ProductImage extends \yii\db\ActiveRecord
         }
 
     }
-
+    */
     public function getUrl($product_id)
     {
         $imageUrl = Yii::getAlias('@frontendWebroot/uploads').'/'.$product_id;

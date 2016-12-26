@@ -2,12 +2,12 @@ body {padding-top: 0;}
 a, a:hover{color:#444;}
 .clr{clear:both;}
 .navbar-fixed-top, .navbar-fixed-bottom {position: relative;}
-#header{padding:8px 0 4px; border-bottom:4px solid #444;margin-bottom:14px }
+#header{padding:8px 0 4px; border-bottom:4px solid #8C6666;margin-bottom:14px }
 #header a{text-decoration:none; color:#444;}
 #logoM{float:left;}
-.thumbnail img{ max-width:100%}
-.thumbnail:hover{ -webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0; border:1px solid #eee}
-.thumbnail h4{line-height:42px}
+.thumbnail img{ max-height:180px; min-height: 180px;}
+.thumbnail:hover{ -webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 5px; border:1px solid #966D6DB3}
+.thumbnail h4{line-height:30px}
 hr.soften {margin: 8px 0 4px; background:#ddd;}
 /* Fade in fade out transition  */
 #srchFld {background: url(../img/search.png) no-repeat right center;border-radius: 0;padding: 4px;margin: 0;line-height: 16px;}
@@ -23,7 +23,7 @@ hr.soften {margin: 8px 0 4px; background:#ddd;}
 .carousel .active.left {left:0;opacity:0;z-index:2;}
 .carousel .next {left:0;opacity:1;z-index:1;}
 .navbar-inner {padding-left: 0;padding-right: 0;}
-.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {color: white;background-color: brown;text-shadow: none;}
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {color: white;background-color: #a14646;text-shadow: none;}
 /* Sidebar--------- */
 #sidebar .bs-docs-sidenav > li > a {border: 0; }
 #sidebar ul{margin-top:0px; padding:0}
@@ -52,8 +52,8 @@ hr.soften {margin: 8px 0 4px; background:#ddd;}
 .cart{border:1px solid #ddd;}
 .thumbnail>a{display:block; text-align:center}
 .thumbnail h5,.thumbnail p{text-align:center}
-.thumbnail{background:#fff;}
-.thumbnail {position:relative;border: 1px solid white;}
+.thumbnail{background:#fff; margin-left: 10px; margin-bottom: 12px; padding-bottom: 20px}
+.thumbnail {position:relative;border: 1px solid #62616133; min-width: 270px; max-width: 270px; }
 /* Compair product page */
 .table td[align=right] {text-align: right;}
 .tag {background:url(../img/new.png) no-repeat 0 0; position: absolute; display:block; top: -4px;right: -18px; height:48px; width:48px;}
