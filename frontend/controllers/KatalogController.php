@@ -41,8 +41,10 @@ class KatalogController extends \yii\web\Controller
             $productsQuery->where(['category_id' => $this->getCategoryIds($categories, $id)]);
 
         }
-        else {  //kalo kategori kosong, ambil 3 aja dari tiap produk ya... :)
-            $this->getKategoriUmum();
+        else {  //kalo kategori kosong, ambil 3 aja dari tiap produk ya... :) hmmm,belum kelaar ni..!
+            
+          //  $productsQueryArray = $this->getKategoriUmum();
+          //  $productsQuery->orderBy('id DESC')->limit(3)->all();
         }
 
         $productsDataProvider = new ActiveDataProvider([
@@ -63,19 +65,23 @@ class KatalogController extends \yii\web\Controller
         return $this->render('view');
     }
 
-/*
+    /*
     private function getKategoriUmum()
     {
         $categories = Category::find()->indexBy('id')->orderBy('id')->all();
     //    print_r($categories);
      //   exit();
+        $productsQuery = array();
+        $i= 0;
         foreach ($categories as $category) {
-            $productsQuery = Product::find()->where(['category_id' => $category->id])->orderBy('id DESC')->limit(3);
+            $i++;
+            $productsQuery[$i] = Product::find()->where(['category_id' => $category->id])->orderBy('id DESC')->limit(3);
             
         }
+        return $productsQuery;
     }
+    */
 
-*/
     /**
      * Returns IDs of category and all its sub-categories
      *

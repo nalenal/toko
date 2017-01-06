@@ -54,6 +54,8 @@ hr.soften {margin: 8px 0 4px; background:#ddd;}
 .thumbnail h5,.thumbnail p{text-align:center}
 .thumbnail{background:#fff; margin-left: 10px; margin-bottom: 12px; padding-bottom: 20px}
 .thumbnail {position:relative;border: 1px solid #62616133; min-width: 270px; max-width: 270px; }
+.thumbnail .caption { padding: 0 5px 9px; }
+
 /* Compair product page */
 .table td[align=right] {text-align: right;}
 .tag {background:url(../img/new.png) no-repeat 0 0; position: absolute; display:block; top: -4px;right: -18px; height:48px; width:48px;}

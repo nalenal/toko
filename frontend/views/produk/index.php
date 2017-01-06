@@ -43,20 +43,20 @@
 			#lightbox-image-details-caption { font-weight: bold; }#lightbox-image-details-currentNumber {display: block; clear: left; padding-bottom: 1.0em;}
 			#lightbox-secNav-btnClose {width: 66px; float: right;padding-bottom: 0.7em;	}
 			</style>
-            <a href="assets/products/large/f1.jpg" title="<h4>Fujifilm FinePix S2950 Digital Camera</h4>">
-				<img src="assets/products/large/3.jpg" width="100%" alt="Fujifilm FinePix S2950 Digital Camera"/>
+            <a href="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/large/f1.jpg" title="<h4>Fujifilm FinePix S2950 Digital Camera</h4>">
+				<img src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/large/3.jpg" width="100%" alt="Fujifilm FinePix S2950 Digital Camera"/>
             </a>
 			<div id="myCarousel" class="moreOptopm carousel slide">
                 <div class="carousel-inner">
                   <div class="item active">
-                   <a href="assets/products/large/f1.jpg"> <img width="29%" src="assets/products/large/f1.jpg" alt=""/></a>
-                   <a href="assets/products/large/f2.jpg"> <img width="29%" src="assets/products/large/f2.jpg" alt=""/></a>
-                   <a href="assets/products/large/f3.jpg" > <img width="29%" src="assets/products/large/f3.jpg" alt=""/></a>
+                   <a href="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/large/f1.jpg"> <img width="29%" src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/large/f1.jpg" alt=""/></a>
+                   <a href="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/large/f2.jpg"> <img width="29%" src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/large/f2.jpg" alt=""/></a>
+                   <a href="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/large/f3.jpg" > <img width="29%" src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/large/f3.jpg" alt=""/></a>
                   </div>
                   <div class="item">
-                   <a href="assets/products/large/f3.jpg" > <img width="29%" src="assets/products/large/f3.jpg" alt=""/></a>
-                   <a href="assets/products/large/f1.jpg"> <img width="29%" src="assets/products/large/f1.jpg" alt=""/></a>
-                   <a href="assets/products/large/f2.jpg"> <img width="29%" src="assets/products/large/f2.jpg" alt=""/></a>
+                   <a href="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/large/f3.jpg" > <img width="29%" src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/large/f3.jpg" alt=""/></a>
+                   <a href="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/large/f1.jpg"> <img width="29%" src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/large/f1.jpg" alt=""/></a>
+                   <a href="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/large/f2.jpg"> <img width="29%" src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/large/f2.jpg" alt=""/></a>
                   </div>
                 </div>
               <!--  
@@ -65,16 +65,6 @@
 			  -->
               </div>
 			  
-			 <div class="btn-toolbar">
-			  <div class="btn-group">
-				<span class="btn"><i class="icon-envelope"></i></span>
-				<span class="btn" ><i class="icon-print"></i></span>
-				<span class="btn" ><i class="icon-zoom-in"></i></span>
-				<span class="btn" ><i class="icon-star"></i></span>
-				<span class="btn" ><i class=" icon-thumbs-up"></i></span>
-				<span class="btn" ><i class="icon-thumbs-down"></i></span>
-			  </div>
-			</div>
 			</div>
 			<div class="span6">
 				<h3>Fujifilm FinePix S2950 Digital Camera  </h3>
@@ -185,7 +175,7 @@
 			<div class="tab-pane" id="listView">
 				<div class="row">	  
 					<div id="productView" class="span2">
-						<img src="assets/products/4.jpg" alt=""/>
+						<img src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/4.jpg" alt=""/>
 					</div>
 					<div class="span4">
 						<h3>New | Available</h3>				
@@ -214,7 +204,7 @@
 			<hr class="soft"/>
 			<div class="row">	  
 					<div id="productView" class="span2">
-						<img src="assets/products/4.jpg" alt=""/>
+						<img src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/4.jpg" alt=""/>
 					</div>
 					<div class="span4">
 						<h3>New | Available</h3>				
@@ -243,7 +233,7 @@
 			<hr class="soft"/>
 			<div class="row">	  
 					<div id="productView" class="span2">
-					<img src="assets/products/4.jpg" alt=""/>
+					<img src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/4.jpg" alt=""/>
 					</div>
 					<div class="span4">
 						<h3>New | Available</h3>				
@@ -272,7 +262,7 @@
 			<hr class="soft"/>
 			<div class="row">	  
 					<div id="productView" class="span2">
-					<img src="assets/products/4.jpg" alt=""/>
+					<img src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/4.jpg" alt=""/>
 					</div>
 					<div class="span4">
 						<h3>New | Available</h3>				
@@ -302,7 +292,7 @@
 			<hr class="soft"/>
 			<div class="row">	  
 					<div id="productView" class="span2">
-					<img src="assets/products/4.jpg" alt=""/>
+					<img src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/4.jpg" alt=""/>
 					</div>
 					<div class="span4">
 						<h3>New | Available</h3>				
@@ -331,7 +321,7 @@
 			<hr class="soft"/>
 				<div class="row">	  
 					<div id="productView" class="span2">
-					<img src="assets/products/4.jpg" alt=""/>
+					<img src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/4.jpg" alt=""/>
 					</div>
 					<div class="span4">
 						<h3>New | Available</h3>				
@@ -363,7 +353,7 @@
 				<ul class="thumbnails">
 					<li class="span3">
 					  <div class="thumbnail">
-						<a href="product_details.html"><img src="assets/products/4.jpg" alt=""/></a>
+						<a href="product_details.html"><img src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/4.jpg" alt=""/></a>
 						<div class="caption">
 						  <h5>Manicure &amp; Pedicure</h5>
 						  <p> 
@@ -375,7 +365,7 @@
 					</li>
 					<li class="span3">
 					  <div class="thumbnail">
-						<a href="product_details.html"><img src="assets/products/4.jpg" alt=""/></a>
+						<a href="product_details.html"><img src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/4.jpg" alt=""/></a>
 						<div class="caption">
 						  <h5>Manicure &amp; Pedicure</h5>
 						  <p> 
@@ -387,7 +377,7 @@
 					</li>
 					<li class="span3">
 					  <div class="thumbnail">
-						<a href="product_details.html"><img src="assets/products/4.jpg" alt=""/></a>
+						<a href="product_details.html"><img src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/4.jpg" alt=""/></a>
 						<div class="caption">
 						  <h5>Manicure &amp; Pedicure</h5>
 						  <p> 
@@ -399,7 +389,7 @@
 					</li>
 					<li class="span3">
 					  <div class="thumbnail">
-						<a href="product_details.html"><img src="assets/products/4.jpg" alt=""/></a>
+						<a href="product_details.html"><img src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/4.jpg" alt=""/></a>
 						<div class="caption">
 						  <h5>Manicure &amp; Pedicure</h5>
 						  <p> 
@@ -411,7 +401,7 @@
 					</li>
 					<li class="span3">
 					  <div class="thumbnail">
-						<a href="product_details.html"><img src="assets/products/4.jpg" alt=""/></a>
+						<a href="product_details.html"><img src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/4.jpg" alt=""/></a>
 						<div class="caption">
 						  <h5>Manicure &amp; Pedicure</h5>
 						  <p> 
@@ -423,7 +413,7 @@
 					</li>
 					<li class="span3">
 					  <div class="thumbnail">
-						<a href="product_details.html"><img src="assets/products/4.jpg" alt=""/></a>
+						<a href="product_details.html"><img src="<?php echo \Yii::$app->request->baseUrl;?>/assets/products/4.jpg" alt=""/></a>
 						<div class="caption">
 						  <h5>Manicure &amp; Pedicure</h5>
 						  <p> 
